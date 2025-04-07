@@ -59,12 +59,13 @@ $(function () {
     }
   }
   // Change only the version and date
-  var metaData = ["1.1.7", "29/03/2025"]
+  var metaData = ["1.1.8", "07/04/2025"]
   updateMetaInfo(metaData)
 
   // Just add a new row.
   var changeLogData = [
     // Add a new row below this comment.
+    ["2025, April, 04 - v 1.1.8", ["Updated: Plugin composer version and dependency manager code."]],
     ["2025, March, 29 - v 1.1.7", ["Updated: Plugin admin ajax function."]],
     ["2025, March, 20 - v 1.1.6", ["Updated: Plugin composer version."]],
     ["2025, March, 16 - v 1.1.5", ["Updated: Plugin meta info class.", "Updated: Addon shortcodes.", "Fixed: WPB shortcode javascript file loading issue.", "Fixed: Animation class bug.", "Added: plugin dependency constants and methods.", "Fixed: vc_add_shortcode_param dependency bug.", "Fixed: dependency checkpoint bugs.", "Fixed: Update notifier bug.", "Removed: Extra codes from the plugin.", "Updated: Plugin translation file.", "Removed: WPBakery elements empty description tag."]],
