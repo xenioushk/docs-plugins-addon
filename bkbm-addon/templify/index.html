@@ -1,496 +1,620 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTDHTML4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
+<html lang="en">
 
-<head lang="en">
-  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+<head>
   <title>Templify KB - Knowledge Base Addon - Documentation</title>
-  <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
-  <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
-  <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css"
-    media="screen, projection">
-  <style type="text/css" media="screen">
-    body {
-      font-family: verdana;
-      font-size: 13px;
-      line-height: 1.7em;
-    }
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    h2,
-    h3,
-    h4 {
-      line-height: 1.5em;
-    }
-
-    p,
-    table,
-    hr,
-    .box {
-      margin-bottom: 25px;
-      line-height: 1.7em;
-    }
-
-    .box p {
-      margin-bottom: 10px;
-    }
-
-    img {
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
-      padding: 5px;
-      margin-top: 10px;
-    }
-  </style>
+  <meta name="description" content="Templify KB - Knowledge Base Addon - Documentation" />
+  <meta name="author" content="Mahbub Alam Khan" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+    rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://xenioushk.github.io/bwl-static-assets/doc-assets/css/all.min.css" />
+  <link rel="stylesheet" href="https://xenioushk.github.io/bwl-static-assets/doc-assets/css/styles.css" />
 </head>
 
 
-<body>
-  <div class="container">
+<body class="body-green">
 
-    <h3 class="center alt">Templify KB - Knowledge Base Addon
-      Documentation
-    </h3>
-
-    <hr>
-
-    <div class="borderTop">
-      <div class="span-6 colborder info prepend-1">
-        <p class="prepend-top">
-          <strong>
-            Last Edited: 10/12/2024<br>
-            Created: 04/05/2015<br>
-            By: Mahbub Alam Khan<br>
-            Support:
-            <a href="https://1.envato.market/bkbm-wp">Get Premium Support</a><br>
-            Web Site:
-            <a href="https://bluewindlab.net" target="_blank">bluewindlab.net</a><br>
-          </strong>
-        </p>
+  <div class="page-wrapper">
+    <!-- ******Header****** -->
+    <header id="header" class="header">
+      <div class="container">
+        <div class="branding">
+          <h1 class="logo text-center">
+            <a href="index.html">
+              <span class="text-bold">
+                Templify KB<br />
+                Knowledge Base Addon Documentation
+              </span>
+            </a>
+          </h1>
+        </div>
+        <!-- branding-->
       </div>
-      <!-- end div .span-6 -->
+      <!-- container-->
+    </header>
+    <!-- header-->
+    <div class="doc-wrapper">
+      <div class="container">
+        <div class="doc-body row">
+          <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+            <div id="doc-nav" class="doc-nav">
+              <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+                <a class="nav-link scrollto sub-menu-sign" href="#addon-overview-section">Addon Overview &
+                  Installation</a>
+                <nav class="doc-sub-menu nav flex-column">
+                  <a class="nav-link scrollto" href="#requirements">Requirements</a>
+                  <a class="nav-link scrollto" href="#installation_steps">Installation Steps</a>
+                </nav>
+                <!-- nav-->
 
-      <div class="span-12 last">
-        <p class="prepend-top append-0">
-          Thank you for purchasing Templify KB - Knowledge Base Addon.
-          If you like this plugin, feel free to rate it five stars at CodeCanyon downloads section.
-          If you encounter any problems please do not give a low rating but
-          <a href="https://1.envato.market/bkbm-wp">contact me</a>
-          first. So I can help you.
-          <br />
-          Thank You!
-        </p>
+                <a class="nav-link scrollto" href="#how_to_operate">Operate Addon</a>
+
+                <a class="nav-link scrollto sub-menu-sign" href="#plugin_shortcodes">Addon Shortcodes</a>
+                <nav class="doc-sub-menu nav flex-column">
+                  <a class="nav-link scrollto" href="#display_search_box">Display Search Box</a>
+                  <a class="nav-link scrollto" href="#custom_search_placeholder">Custom Search Placeholder</a>
+                </nav>
+
+                <a class="nav-link scrollto" href="#addon_option_panel">Addon Option Panel</a>
+
+                <a class="nav-link scrollto" href="#video_tutorials">Video Tutorials</a>
+                <a class="nav-link scrollto" href="#translate_addon">Translate Addon</a>
+                <a class="nav-link scrollto" href="#trouble_shoot">Troubleshooting</a>
+
+                <a class="nav-link scrollto" href="#upgrade_notes">Upgrade Notes</a>
+                <a class="nav-link scrollto" href="#change_log">Change Log</a>
+                <a class="nav-link scrollto" href="#source_credit">Source & Credit</a>
+                <a class="nav-link scrollto sub-menu-sign" href="#theme_template_section">More Template & Themes</a>
+                <nav class="doc-sub-menu nav flex-column">
+                  <a class="nav-link scrollto" href="#wordpress_themes">WordPress Themes</a>
+                  <a class="nav-link scrollto" href="#wordpress_plugins">WordPress Plugins</a>
+                  <a class="nav-link scrollto" href="#html5_templates">HTML5 Templates</a>
+                </nav>
+
+                <small><i>Doc Last Update:</i> 20/03/2025</small>
+              </nav>
+              <!-- doc-menu-->
+            </div>
+            <h3 class="center alt">Templify KB - Knowledge Base Addon
+              Documentation
+            </h3>
+            <div class="borderTop">
+              <div class="span-6 colborder info prepend-1">
+                <p class="prepend-top">
+                  <strong>
+                    Last Edited: 10/12/2024<br>
+                    Created: 04/05/2015<br>
+                    By: Mahbub Alam Khan<br>
+                    Support:
+                    <a href="https://1.envato.market/bkbm-wp">Get Premium Support</a><br>
+                    Web Site:
+                    <a href="https://bluewindlab.net" target="_blank">bluewindlab.net</a><br>
+                  </strong>
+                </p>
+              </div>
+              <!-- end div .span-6 -->
+
+              <div class="span-12 last">
+                <p class="prepend-top append-0">
+                  Thank you for purchasing Templify KB - Knowledge Base Addon.
+                  If you like this plugin, feel free to rate it five stars at CodeCanyon downloads section.
+                  If you encounter any problems please do not give a low rating but
+                  <a href="https://1.envato.market/bkbm-wp">contact me</a>
+                  first. So I can help you.
+                  <br />
+                  Thank You!
+                </p>
 
 
+              </div>
+            </div>
+            <h2 id="toc" class="alt">Table of Contents</h2>
+            <ol class="alpha">
+              <li>
+                <a href="#QuickIntroduction">Quick Introduction</a>
+              </li>
+              <li>
+                <a href="#howToInstall">Installation</a>
+              </li>
+              <li>
+                <a href="#howToUse">How To Use?</a>
+              </li>
+              <li>
+                <a href="#option_panel">Option Panel</a>
+              </li>
+              <li>
+                <a href="#translateAddon">Translate Addon</a>
+              </li>
+              <li>
+                <a href="#upgradeNotes">Upgrade Notes</a>
+              </li>
+              <li>
+                <a href="#changelog">Change Log</a>
+              </li>
+              <li>
+                <a href="#credits">Credits</a>
+              </li>
+              <li>
+                <a href="#conclusion">Conclusion</a>
+              </li>
+
+            </ol>
+          </div>
+          <!-- doc-sidebar-->
+
+          <div class="doc-content col-md-9 col-12 order-1">
+            <div class="content-inner">
+              <h3 id="QuickIntroduction">
+                <strong>A. Quick Introduction?</strong>
+                -
+                <a href="#toc">top</a>
+              </h3>
+
+
+              <p>
+                <strong>Templify KB - Knowledge Base Addon</strong>
+                allows you to display Knowledge Base categories, tags and
+                single posts in custom templates without modifying any of the files inside theme forlder. Addon
+                automatically
+                handle
+                BWL Knowledge base categories, tags and single posts templates. Addon comes with responsive and mobile
+                friendly
+                grid layout.
+                So that you can easily display you're Knowledge Base contents in small devices.
+                <br />
+                <p />
+              </p>
+              <p>
+                Addone comes with built-in widget feature. You can add any custom widgets in sidebar areas only for the
+                KB
+                posts.
+                That means
+                you have the complete freedom to manage knowledge base page sidebar contents.<br />
+              </p>
+              <p>
+                Addon has extensive option panel that allows you to customize page layout, search box settings,
+                breadcrumb
+                settings and many more.
+                You can display catgories and tags in 4 different style with 3 different page layout(Right sidebar/ Left
+                Sidebar/
+                Full Width). Also, you can enable/disable
+                any templates from option panel.
+                <br />
+              </p>
+
+              <p>
+                No matter which WordPress theme you're using, addon automatically sync it's layout with theme structure.
+                You
+                may
+                need to add
+                some custom stylesheet to adjust layout a little bit. That's why we added custom CSS panel to insert
+                custom
+                CSS
+                code without changing theme/plugin
+                original CSS code.
+              </p>
+
+              <p>
+
+                Checkout plugin outlook in WordPress site-
+
+                <br />
+                <img src="screenshot/01_templify_kb.png" alt="" />
+
+              </p>
+
+
+              <hr>
+
+              <h3 id="howToInstall">
+                <strong>B. Installation:</strong>
+                -
+                <a href="#toc">top</a>
+              </h3>
+
+              <p class="notice">
+                You need to install
+                <a href="https://1.envato.market/bkbm-wp" target="_blank">
+                  BWL Knowledge Base Manager Plugin</a>
+                to use "Templify KB - Knowledge Base Addon". Minimum version
+                <b>1.0.9</b>
+                required.
+              </p>
+
+              <h4>
+                <strong>
+                  - Steps:</strong>
+              </h4>
+              <ol class="number">
+                <li>Go to plugins section in your wordpress admin panel and click
+                  <b>Add New</b>
+                  to install plugin.
+                  <br />
+                  <img src="screenshot/install-plugins-process.png" alt="" />
+                </li>
+
+                <li>Now, upload the "bkbm-template-manager.zip" file.</li>
+
+                <li>
+                  Once plugin successfully uploaded in your server you will get an message to activate it.
+                  Click on "Activate Plugin" Link and plugin will be ready to use.
+                </li>
+
+                <li>After activating plugins, you will redirect in plugins section of wp-admin panel and
+                  show new installed plugins information in there.<br />
+                  <img src="screenshot/installation.png" alt="" style="max-width: 900px; width: 100&;" />
+                </li>
+              </ol>
+
+              <h3 id="howToUse">
+                <strong>C. How To Use?</strong>
+                -
+                <a href="#toc">top</a>
+              </h3>
+
+              <p>- Once installation has been completed successfully, Addon automatically start handling Knowledge Base
+                categories, tags and
+                single post contents. Each templates has three type of layouts- Right sidebar, Left sidebar and Full
+                Width.
+                You
+                can set layouts from
+                option panel.
+                <br />
+
+
+              </p>
+              <strong>Category Layout:</strong>
+              <p><img src="screenshot/02_category_page.png" alt="" style="max-width: 900px; width: 100&;" /></p>
+
+              <strong>Tag Layout:</strong>
+              <p><img src="screenshot/03_tag_page.png" alt="" style="max-width: 900px; width: 100&;" /></p>
+
+              <strong>Single Knowledgebase Layout:</strong>
+              <p><img src="screenshot/04_single_page.png" alt="" style="max-width: 900px; width: 100&;" /></p>
+              <hr />
+              <h3 id="option_panel">
+                <strong>Addon Option panel:</strong>
+                -
+                <a href="#toc">top</a>
+              </h3>
+
+              <p><img src="screenshot/05_option_panel.png" alt="" style="max-width: 900px; width: 100&;" /></p>
+
+              <strong>How to set category/Tag Template Post Styling?</strong>
+              <p><br />There are 4 types of styling (Rounded/Rectangular/Iconized/Simple) for display category and tag
+                items.
+                Go
+                to option panel
+                'Knowledge base page' section and select you're preferable style from the list.
+                -
+                <br />
+                <img src="screenshot/06_set_styling.png" alt="" />
+              </p>
+
+              <strong>How to set home page URL in breadcrumb?</strong>
+              <p><br />To set Knowledge base home page URL in the breadcrumb, you need to set knowledge base Home page
+                slug.
+                To
+                get home
+                page slug go to 'Page' section in WordPress admin panel and click 'Quick Edit' and copy 'slug' value.
+                Use
+                this
+                slug value as
+                <strong>'Knowledge base Home Page Slug'</strong>.
+                <br />
+                <br /><strong>Step: 01</strong>
+                <img src="screenshot/step_1.png" alt="" />
+                <br /><br /><strong>Step: 02</strong><br />
+                <img src="screenshot/step_2.png" alt="" />
+                <br /><br /><strong>Step: 03</strong><br />
+                <img src="screenshot/08_breadcrumb.png" alt="" />
+                <br /><br /><strong>Step: 04</strong><br />
+                <img src="screenshot/breadcrumb_output.png" alt="" />
+              </p>
+
+              <strong>How to use custom widget?</strong>
+              <p><br />Addon comes with widget feature. So that you can easily set custom widgets only for knowledge
+                base
+                category, tag and
+                single post templates. It's very easy to use like regular WordPress widget. Go to widgets section in
+                admin
+                panel
+                and you will a new
+                widget panel called 'BKBM Custom Sidebar'. Add you're preferable widgets in that new sidebar panel.
+                -
+                <br />
+                <img src="screenshot/07_custom_widgets.png" alt="" />
+              </p>
+
+
+              <hr />
+
+              <h3 id="translateAddon">
+                <strong>E. Translate Plugin.</strong>
+                -
+                <a href="#toc">top</a>
+              </h3>
+
+              <p>
+                "Templify KB" offers cool translation feature. So, you can easily add this plugin
+                any kind of website. Check following steps for translate "Templify KB" plugin.
+              </p>
+
+              <ol>
+                <li>Inside of Addon "lang" folder you will get a file named "en_EN.po" file. To edit this file you need
+                  to
+                  install
+                  "poedit" software in your computer.</li>
+                <li>Our Addon text-domain is 'bkb_tpl'</li>
+                <li>
+                  If you are doing "localization of a plugin" for the first time, then I recommend you to check this
+                  video.
+                  <a href="https://www.youtube.com/watch?v=aGN-hbMCPMg"
+                    target="_blank">https://www.youtube.com/watch?v=aGN-hbMCPMg</a>
+                </li>
+                <li>Suppose you want to translate plugin in to "German" language.
+                  <br />
+                  So,".po" file name will be "bkb_tpl-de_DE.po". That's all.
+                </li>
+                <li>For country code check -
+                  <a
+                    href="https://www.gnu.org/savannah-checkouts/gnu/gettext/manual/html_node/Country-Codes.html#Country-Codes">
+                    https://www.gnu.org/savannah-checkouts/gnu/gettext/manual/html_node/Country-Codes.html#Country-Codes
+                  </a>
+                </li>
+                <li>For Language code check -
+                  <a
+                    href="https://www.gnu.org/savannah-checkouts/gnu/gettext/manual/html_node/Usual-Language-Codes.html#Usual-Language-Codes">
+                    https://www.gnu.org/savannah-checkouts/gnu/gettext/manual/html_node/Usual-Language-Codes.html#Usual-Language-Codes
+                  </a>
+                </li>
+
+              </ol>
+
+
+              <h3 id="upgradeNotes">
+                <strong>F. Upgrade Notes</strong>
+                -
+                <a href="#toc">top</a>
+              </h3>
+              <h4 style="background: #ff9999; padding: 5px;">Please take a backup before update all files and folder.
+              </h4>
+
+              <p>
+                <b>2024, December, 10 - v 1.1.7
+                </b>
+                <br />- Replace all files and folders.
+              </p>
+
+              <hr>
+
+              <h3 id="changelog">
+                <strong>G. Change Log</strong>
+                -
+                <a href="#toc">top</a>
+              </h3>
+
+              <div>
+
+                <div>
+                  <h4>2024, December, 10 - v 1.1.7</h4>
+                  <ul>
+                    <li>Updated: Plugin for WordPress 6.7.1</li>
+                    <li>Updated: Plugin language/translation file.</li>
+                    <li>Updated: Addon documentation.</li>
+                  </ul>
+                </div>
+
+                <h4>2024, July, 16 - v 1.1.6</h4>
+                <ul>
+                  <li><strong>Updated:</strong> Addon code.</li>
+                  <li><strong>Updated:</strong> Documentation File.</li>
+                </ul>
+
+                <h4>2023, March, 12 - v 1.1.5</h4>
+                <ul>
+                  <li><strong>Updated:</strong> The title tag of a single KB post changed from h1 to h2.</li>
+                  <li><strong>Updated:</strong> Documentation File.</li>
+                </ul>
+
+                <h4>2017, June, 18 - v 1.0.6</h4>
+                <ul>
+                  <li><strong>Updated:</strong> Template Own CSS Style sheet Loading issue.</li>
+                  <li><strong>Updated:</strong> Table of Content Layout.</li>
+                  <li><strong>Updated:</strong> Documentation File.</li>
+                </ul>
+
+              </div>
+
+
+              <p>
+                <b>2017, April, 18 - v 1.0.5
+                </b>
+
+                <br /><b>ADDED</b>
+                Bootstrap compatibility option in option panel.
+                <br /><b>FIXED:</b>
+                RTL issues for breadcrumb and KB post navigation.
+                <br /><b>IMPROVED:</b>
+                Category/tag/single template files.
+                <br /><b>IMPROVED:</b>
+                Addon performance.
+                <br /><b>UPDATED:</b>
+                Language File.
+                <br /><b>UPDATED:</b>
+                Documentation File.
+              </p>
+
+              <p>
+                <b>2016, December, 31 - v 1.0.4
+                </b>
+                <br /><b>FIXED:</b>
+                Template layout issue.
+                <br /><b>IMPROVED:</b>
+                Addon performance.
+                <br /><b>UPDATED:</b>
+                Language File.
+                <br /><b>UPDATED:</b>
+                Documentation File.
+              </p>
+
+              <p>
+                <b>2016, June, 07 - v 1.0.3
+                </b>
+                <br /><b>FIXED:</b>
+                Multi-site notification issue.
+                <br /><b>IMPROVED:</b>
+                Addon performance.
+                <br /><b>UPDATED:</b>
+                Language File.
+                <br /><b>UPDATED:</b>
+                Documentation File.
+              </p>
+
+              <p>
+                <b>2015, April, 27 - v 1.0.2
+                </b>
+                <br />- Added perfect responsive layout. Fxied issue for mobile device layout.
+                <br />- Added option in option panel to set title font tag, size in single page.
+                <br />- Added option in option panel to set margin in single/category/tag template.
+                <br />- Fixed pagination layout in category/tag pages.
+                <br />- Added option to set padding in template content & sidebar area from option panel.
+                <br /><b>IMPROVED:</b>
+                Addon performance.
+                <br /><b>UPDATED:</b>
+                Language File.
+                <br /><b>UPDATED:</b>
+                Documentation File.
+              </p>
+
+              <p>
+                <b>2015, November, 20 - v 1.0.1
+                </b>
+                <br />- Added Enable/Disable Template Feature.
+                <br />- Added Feature to user existing theme sidebars with custom KB template.
+                <br />- Added Category/Topics Post Ordering Feature.
+                <br />- Enable/Disable Template Stylesheet Feature.
+                <br /><b>IMPROVED:</b>
+                Addon performance.
+                <br /><b>UPDATED:</b>
+                Language File.
+                <br /><b>UPDATED:</b>
+                Documentation File.
+              </p>
+
+              <p>
+                <b>2015, June, 21 - v 1.0.0
+                </b>
+                <br />- Initial release.
+              </p>
+
+              <hr>
+
+
+              <h3 id="credits">
+                <strong>H. Credits</strong>
+                -
+                <a href="#toc">top</a>
+              </h3>
+              <p>- Ideas & Coded By
+                <a href="https://www.bluewindlab.net" target="_blank">Mahbub Alam Khan</a>
+              </p>
+              <p>- BWL Knowledge Base Manager Plugin Plugin By
+                <a href="https://1.envato.market/bkbm-wp" target="_blank">bluewindlab</a>
+              </p>
+
+              <h3 id="conclusion">
+                <strong>H. Conclusion:</strong>
+                -
+                <a href="#toc">top</a>
+              </h3>
+              <p>Once again, thank you so much for purchasing Templify KB - Knowledge Base Addon.
+              </p>
+
+              <p class="append-bottom alt large">
+                <strong>Md. Mahbub Alam Khan</strong>
+              </p>
+              <p>
+                <a href="#toc">Go To Table of Contents</a>
+              </p>
+
+
+              <!-- Our Template & Themes Section  -->
+
+              <section id="theme_template_section" class="doc-section">
+                <h2 class="section-title">Our Themes & Templates</h2>
+
+                <div id="wordpress_themes" class="section-block">
+                  <div class="row">
+                    <div class="col-md-12 col-12">
+                      <h3 class="block-title">WordPress Themes</h3>
+                      <ol class="our-products list" id="bwl_wp_themes"></ol>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="wordpress_plugins" class="section-block">
+                  <div class="row">
+                    <div class="col-md-12 col-12">
+                      <h3 class="block-title">WordPress Plugins</h3>
+                      <ol class="our-products list" id="bwl_wp_plugins"></ol>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="html5_templates" class="section-block">
+                  <div class="row">
+                    <div class="col-md-12 col-12">
+                      <h3 class="block-title">HTML5 Themes</h3>
+                      <ol class="our-products list" id="bwl_html_templates"></ol>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+            </div>
+            <!-- content-inner-->
+          </div>
+          <!-- doc-content-->
+        </div>
+        <!-- doc-body-->
       </div>
+      <!-- container-->
     </div>
-    <!-- end div .borderTop -->
-
-    <hr>
-
-    <h2 id="toc" class="alt">Table of Contents</h2>
-    <ol class="alpha">
-      <li>
-        <a href="#QuickIntroduction">Quick Introduction</a>
-      </li>
-      <li>
-        <a href="#howToInstall">Installation</a>
-      </li>
-      <li>
-        <a href="#howToUse">How To Use?</a>
-      </li>
-      <li>
-        <a href="#option_panel">Option Panel</a>
-      </li>
-      <li>
-        <a href="#translateAddon">Translate Addon</a>
-      </li>
-      <li>
-        <a href="#upgradeNotes">Upgrade Notes</a>
-      </li>
-      <li>
-        <a href="#changelog">Change Log</a>
-      </li>
-      <li>
-        <a href="#credits">Credits</a>
-      </li>
-      <li>
-        <a href="#conclusion">Conclusion</a>
-      </li>
-
-    </ol>
-
-
-    <hr />
-
-    <h3 id="QuickIntroduction">
-      <strong>A. Quick Introduction?</strong>
-      -
-      <a href="#toc">top</a>
-    </h3>
-
-
-    <p>
-      <strong>Templify KB - Knowledge Base Addon</strong>
-      allows you to display Knowledge Base categories, tags and
-      single posts in custom templates without modifying any of the files inside theme forlder. Addon automatically
-      handle
-      BWL Knowledge base categories, tags and single posts templates. Addon comes with responsive and mobile friendly
-      grid layout.
-      So that you can easily display you're Knowledge Base contents in small devices.
-      <br />
-      <p />
-    </p>
-    <p>
-      Addone comes with built-in widget feature. You can add any custom widgets in sidebar areas only for the KB posts.
-      That means
-      you have the complete freedom to manage knowledge base page sidebar contents.<br />
-    </p>
-    <p>
-      Addon has extensive option panel that allows you to customize page layout, search box settings, breadcrumb
-      settings and many more.
-      You can display catgories and tags in 4 different style with 3 different page layout(Right sidebar/ Left Sidebar/
-      Full Width). Also, you can enable/disable
-      any templates from option panel.
-      <br />
-    </p>
-
-    <p>
-      No matter which WordPress theme you're using, addon automatically sync it's layout with theme structure. You may
-      need to add
-      some custom stylesheet to adjust layout a little bit. That's why we added custom CSS panel to insert custom CSS
-      code without changing theme/plugin
-      original CSS code.
-    </p>
-
-    <p>
-
-      Checkout plugin outlook in WordPress site-
-
-      <br />
-      <img src="screenshot/01_templify_kb.png" alt="" />
-
-    </p>
-
-
-    <hr>
-
-    <h3 id="howToInstall">
-      <strong>B. Installation:</strong>
-      -
-      <a href="#toc">top</a>
-    </h3>
-
-    <p class="notice">
-      You need to install
-      <a href="https://1.envato.market/bkbm-wp" target="_blank">
-        BWL Knowledge Base Manager Plugin</a>
-      to use "Templify KB - Knowledge Base Addon". Minimum version
-      <b>1.0.9</b>
-      required.
-    </p>
-
-    <h4>
-      <strong>
-        - Steps:</strong>
-    </h4>
-    <ol class="number">
-      <li>Go to plugins section in your wordpress admin panel and click
-        <b>Add New</b>
-        to install plugin.
-        <br />
-        <img src="screenshot/install-plugins-process.png" alt="" />
-      </li>
-
-      <li>Now, upload the "bkbm-template-manager.zip" file.</li>
-
-      <li>
-        Once plugin successfully uploaded in your server you will get an message to activate it.
-        Click on "Activate Plugin" Link and plugin will be ready to use.
-      </li>
-
-      <li>After activating plugins, you will redirect in plugins section of wp-admin panel and
-        show new installed plugins information in there.<br />
-        <img src="screenshot/installation.png" alt="" style="max-width: 900px; width: 100&;" />
-      </li>
-    </ol>
-
-    <h3 id="howToUse">
-      <strong>C. How To Use?</strong>
-      -
-      <a href="#toc">top</a>
-    </h3>
-
-    <p>- Once installation has been completed successfully, Addon automatically start handling Knowledge Base
-      categories, tags and
-      single post contents. Each templates has three type of layouts- Right sidebar, Left sidebar and Full Width. You
-      can set layouts from
-      option panel.
-      <br />
-
-
-    </p>
-    <strong>Category Layout:</strong>
-    <p><img src="screenshot/02_category_page.png" alt="" style="max-width: 900px; width: 100&;" /></p>
-
-    <strong>Tag Layout:</strong>
-    <p><img src="screenshot/03_tag_page.png" alt="" style="max-width: 900px; width: 100&;" /></p>
-
-    <strong>Single Knowledgebase Layout:</strong>
-    <p><img src="screenshot/04_single_page.png" alt="" style="max-width: 900px; width: 100&;" /></p>
-    <hr />
-    <h3 id="option_panel">
-      <strong>Addon Option panel:</strong>
-      -
-      <a href="#toc">top</a>
-    </h3>
-
-    <p><img src="screenshot/05_option_panel.png" alt="" style="max-width: 900px; width: 100&;" /></p>
-
-    <strong>How to set category/Tag Template Post Styling?</strong>
-    <p><br />There are 4 types of styling (Rounded/Rectangular/Iconized/Simple) for display category and tag items. Go
-      to option panel
-      'Knowledge base page' section and select you're preferable style from the list.
-      -
-      <br />
-      <img src="screenshot/06_set_styling.png" alt="" />
-    </p>
-
-    <strong>How to set home page URL in breadcrumb?</strong>
-    <p><br />To set Knowledge base home page URL in the breadcrumb, you need to set knowledge base Home page slug. To
-      get home
-      page slug go to 'Page' section in WordPress admin panel and click 'Quick Edit' and copy 'slug' value. Use this
-      slug value as
-      <strong>'Knowledge base Home Page Slug'</strong>.
-      <br />
-      <br /><strong>Step: 01</strong>
-      <img src="screenshot/step_1.png" alt="" />
-      <br /><br /><strong>Step: 02</strong><br />
-      <img src="screenshot/step_2.png" alt="" />
-      <br /><br /><strong>Step: 03</strong><br />
-      <img src="screenshot/08_breadcrumb.png" alt="" />
-      <br /><br /><strong>Step: 04</strong><br />
-      <img src="screenshot/breadcrumb_output.png" alt="" />
-    </p>
-
-    <strong>How to use custom widget?</strong>
-    <p><br />Addon comes with widget feature. So that you can easily set custom widgets only for knowledge base
-      category, tag and
-      single post templates. It's very easy to use like regular WordPress widget. Go to widgets section in admin panel
-      and you will a new
-      widget panel called 'BKBM Custom Sidebar'. Add you're preferable widgets in that new sidebar panel.
-      -
-      <br />
-      <img src="screenshot/07_custom_widgets.png" alt="" />
-    </p>
-
-
-    <hr />
-
-    <h3 id="translateAddon">
-      <strong>E. Translate Plugin.</strong>
-      -
-      <a href="#toc">top</a>
-    </h3>
-
-    <p>
-      "Templify KB" offers cool translation feature. So, you can easily add this plugin
-      any kind of website. Check following steps for translate "Templify KB" plugin.
-    </p>
-
-    <ol>
-      <li>Inside of Addon "lang" folder you will get a file named "en_EN.po" file. To edit this file you need to install
-        "poedit" software in your computer.</li>
-      <li>Our Addon text-domain is 'bkb_tpl'</li>
-      <li>
-        If you are doing "localization of a plugin" for the first time, then I recommend you to check this video.
-        <a href="https://www.youtube.com/watch?v=aGN-hbMCPMg"
-          target="_blank">https://www.youtube.com/watch?v=aGN-hbMCPMg</a>
-      </li>
-      <li>Suppose you want to translate plugin in to "German" language.
-        <br />
-        So,".po" file name will be "bkb_tpl-de_DE.po". That's all.
-      </li>
-      <li>For country code check -
-        <a href="https://www.gnu.org/savannah-checkouts/gnu/gettext/manual/html_node/Country-Codes.html#Country-Codes">
-          https://www.gnu.org/savannah-checkouts/gnu/gettext/manual/html_node/Country-Codes.html#Country-Codes
-        </a>
-      </li>
-      <li>For Language code check -
-        <a
-          href="https://www.gnu.org/savannah-checkouts/gnu/gettext/manual/html_node/Usual-Language-Codes.html#Usual-Language-Codes">
-          https://www.gnu.org/savannah-checkouts/gnu/gettext/manual/html_node/Usual-Language-Codes.html#Usual-Language-Codes
-        </a>
-      </li>
-
-    </ol>
-
-
-    <h3 id="upgradeNotes">
-      <strong>F. Upgrade Notes</strong>
-      -
-      <a href="#toc">top</a>
-    </h3>
-    <h4 style="background: #ff9999; padding: 5px;">Please take a backup before update all files and folder.</h4>
-
-    <p>
-      <b>2024, December, 10 - v 1.1.7
-      </b>
-      <br />- Replace all files and folders.
-    </p>
-
-    <hr>
-
-    <h3 id="changelog">
-      <strong>G. Change Log</strong>
-      -
-      <a href="#toc">top</a>
-    </h3>
-
-    <div>
-
-      <div>
-        <h4>2024, December, 10 - v 1.1.7</h4>
-        <ul>
-          <li>Updated: Plugin for WordPress 6.7.1</li>
-          <li>Updated: Plugin language/translation file.</li>
-          <li>Updated: Addon documentation.</li>
-        </ul>
-      </div>
-
-      <h4>2024, July, 16 - v 1.1.6</h4>
-      <ul>
-        <li><strong>Updated:</strong> Addon code.</li>
-        <li><strong>Updated:</strong> Documentation File.</li>
-      </ul>
-
-      <h4>2023, March, 12 - v 1.1.5</h4>
-      <ul>
-        <li><strong>Updated:</strong> The title tag of a single KB post changed from h1 to h2.</li>
-        <li><strong>Updated:</strong> Documentation File.</li>
-      </ul>
-
-      <h4>2017, June, 18 - v 1.0.6</h4>
-      <ul>
-        <li><strong>Updated:</strong> Template Own CSS Style sheet Loading issue.</li>
-        <li><strong>Updated:</strong> Table of Content Layout.</li>
-        <li><strong>Updated:</strong> Documentation File.</li>
-      </ul>
-
-    </div>
-
-
-    <p>
-      <b>2017, April, 18 - v 1.0.5
-      </b>
-
-      <br /><b>ADDED</b>
-      Bootstrap compatibility option in option panel.
-      <br /><b>FIXED:</b>
-      RTL issues for breadcrumb and KB post navigation.
-      <br /><b>IMPROVED:</b>
-      Category/tag/single template files.
-      <br /><b>IMPROVED:</b>
-      Addon performance.
-      <br /><b>UPDATED:</b>
-      Language File.
-      <br /><b>UPDATED:</b>
-      Documentation File.
-    </p>
-
-    <p>
-      <b>2016, December, 31 - v 1.0.4
-      </b>
-      <br /><b>FIXED:</b>
-      Template layout issue.
-      <br /><b>IMPROVED:</b>
-      Addon performance.
-      <br /><b>UPDATED:</b>
-      Language File.
-      <br /><b>UPDATED:</b>
-      Documentation File.
-    </p>
-
-    <p>
-      <b>2016, June, 07 - v 1.0.3
-      </b>
-      <br /><b>FIXED:</b>
-      Multi-site notification issue.
-      <br /><b>IMPROVED:</b>
-      Addon performance.
-      <br /><b>UPDATED:</b>
-      Language File.
-      <br /><b>UPDATED:</b>
-      Documentation File.
-    </p>
-
-    <p>
-      <b>2015, April, 27 - v 1.0.2
-      </b>
-      <br />- Added perfect responsive layout. Fxied issue for mobile device layout.
-      <br />- Added option in option panel to set title font tag, size in single page.
-      <br />- Added option in option panel to set margin in single/category/tag template.
-      <br />- Fixed pagination layout in category/tag pages.
-      <br />- Added option to set padding in template content & sidebar area from option panel.
-      <br /><b>IMPROVED:</b>
-      Addon performance.
-      <br /><b>UPDATED:</b>
-      Language File.
-      <br /><b>UPDATED:</b>
-      Documentation File.
-    </p>
-
-    <p>
-      <b>2015, November, 20 - v 1.0.1
-      </b>
-      <br />- Added Enable/Disable Template Feature.
-      <br />- Added Feature to user existing theme sidebars with custom KB template.
-      <br />- Added Category/Topics Post Ordering Feature.
-      <br />- Enable/Disable Template Stylesheet Feature.
-      <br /><b>IMPROVED:</b>
-      Addon performance.
-      <br /><b>UPDATED:</b>
-      Language File.
-      <br /><b>UPDATED:</b>
-      Documentation File.
-    </p>
-
-    <p>
-      <b>2015, June, 21 - v 1.0.0
-      </b>
-      <br />- Initial release.
-    </p>
-
-    <hr>
-
-
-    <h3 id="credits">
-      <strong>H. Credits</strong>
-      -
-      <a href="#toc">top</a>
-    </h3>
-    <p>- Ideas & Coded By
-      <a href="https://www.bluewindlab.net" target="_blank">Mahbub Alam Khan</a>
-    </p>
-    <p>- BWL Knowledge Base Manager Plugin Plugin By
-      <a href="https://1.envato.market/bkbm-wp" target="_blank">bluewindlab</a>
-    </p>
-
-    <h3 id="conclusion">
-      <strong>H. Conclusion:</strong>
-      -
-      <a href="#toc">top</a>
-    </h3>
-    <p>Once again, thank you so much for purchasing Templify KB - Knowledge Base Addon.
-    </p>
-
-    <p class="append-bottom alt large">
-      <strong>Md. Mahbub Alam Khan</strong>
-    </p>
-    <p>
-      <a href="#toc">Go To Table of Contents</a>
-    </p>
-
-    <hr class="space">
+    <!-- doc-wrapper-->
   </div>
-  <!-- end div .container -->
+  <!-- page-wrapper-->
 
+  <footer id="footer" class="footer text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 text-left">
+          <span>Copyright &copy; 2021 - <a href="https://bluewindlab.net" target="_blank"
+              class="text-info">BlueWindLab</a>. All Rights Reserved.</span>
+        </div>
+        <div class="col-6 text-right">
+          <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+          <span>Designed by <a href="https://themes.3rdwavemedia.com/" target="_blank" class="text-info">Xiaoying
+              Riley</a>.</span>
+        </div>
+      </div>
+    </div>
+    <!-- container-->
+  </footer>
+  <!-- footer-->
+
+  <a id="backTop">Back To Top</a>
+
+  <!-- Main Javascript -->
+  <script type="text/javascript" src="https://xenioushk.github.io/bwl-static-assets/doc-assets/js/all.min.js"></script>
+  <script type="text/javascript" src="https://xenioushk.github.io/bwl-static-assets/doc-assets/js/main.js"></script>
+  <script type="text/javascript" src="https://xenioushk.github.io/bwl-static-assets/doc-assets/js/products.js"></script>
 </body>
 
 </html>

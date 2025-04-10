@@ -1,374 +1,505 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTDHTML4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
+<html lang="en">
 
-<head lang="en">
-  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+<head>
   <title>Restrict KB Access by User Role - Knowledgebase Addon - Documentation</title>
-  <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
-  <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
-  <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css"
-    media="screen, projection">
-  <style type="text/css" media="screen">
-    body {
-      font-family: verdana;
-      font-size: 13px
-    }
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    h1,
-    h2,
-    h3,
-    h4 {
-      line-height: 1.5em;
-    }
-
-    p,
-    table,
-    hr,
-    .box {
-      margin-bottom: 25px;
-      line-height: 1.7em;
-    }
-
-    .box p {
-      margin-bottom: 10px;
-    }
-
-    img {
-      box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
-      padding: 5px;
-      margin-top: 10px;
-    }
-  </style>
+  <meta name="description" content="Restrict KB Access by User Role - Knowledgebase Addon - Documentation" />
+  <meta name="author" content="Mahbub Alam Khan" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+    rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://xenioushk.github.io/bwl-static-assets/doc-assets/css/all.min.css" />
+  <link rel="stylesheet" href="https://xenioushk.github.io/bwl-static-assets/doc-assets/css/styles.css" />
 </head>
 
 
-<body>
-  <div class="container">
+<body class="body-green">
 
-    <h3 class="center alt">
-      Restrict KB Access by User Role - Knowledgebase Addon
-    </h3>
-
-    <div class="borderTop">
-      <div class="span-6 colborder info prepend-1">
-        <p class="prepend-top">
-          <strong>
-            Last Edited: 10/12/2024<br>
-            Created: 18/11/2015<br>
-            By: Md Mahbub Alam Khan<br>
-            Email:
-            <a href="mailto:hkhan.cse@gmail.com">hkhan.cse@gmail.com</a><br>
-            Web Site:
-            <a href="https://www.bluewindlab.net" target="_blank">bluewindlab.net</a><br>
-          </strong>
-        </p>
+  <div class="page-wrapper">
+    <!-- ******Header****** -->
+    <header id="header" class="header">
+      <div class="container">
+        <div class="branding">
+          <h1 class="logo text-center">
+            <a href="index.html">
+              <span class="text-bold">
+                Restrict KB Access by User Role<br />
+                Knowledge Base Addon Documentation
+              </span>
+            </a>
+          </h1>
+        </div>
+        <!-- branding-->
       </div>
-      <!-- end div .span-6 -->
+      <!-- container-->
+    </header>
+    <!-- header-->
+    <div class="doc-wrapper">
+      <div class="container">
+        <div class="doc-body row">
+          <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
 
-      <div class="span-12 last">
-        <p class="prepend-top append-0">
-          Thank you for purchasing Restrict KB Access by User Role - Knowledgebase Addon.
-          If you like this plugin, feel free to rate it five stars at CodeCanyon downloads section.
-          If you encounter any problems please do not give a low rating but
-          <a href="https://codecanyon.net/user/xenioushk#contact">contact me</a>
-          first. So I can help you.
-          Thank You!
-        </p>
+            <div id="doc-nav" class="doc-nav">
+              <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+                <a class="nav-link scrollto sub-menu-sign" href="#addon-overview-section">Addon Overview &
+                  Installation</a>
+                <nav class="doc-sub-menu nav flex-column">
+                  <a class="nav-link scrollto" href="#requirements">Requirements</a>
+                  <a class="nav-link scrollto" href="#installation_steps">Installation Steps</a>
+                </nav>
+                <!-- nav-->
+
+                <a class="nav-link scrollto" href="#how_to_operate">Operate Addon</a>
+
+                <a class="nav-link scrollto sub-menu-sign" href="#plugin_shortcodes">Addon Shortcodes</a>
+                <nav class="doc-sub-menu nav flex-column">
+                  <a class="nav-link scrollto" href="#display_search_box">Display Search Box</a>
+                  <a class="nav-link scrollto" href="#custom_search_placeholder">Custom Search Placeholder</a>
+                </nav>
+
+                <a class="nav-link scrollto" href="#addon_option_panel">Addon Option Panel</a>
+
+                <a class="nav-link scrollto" href="#video_tutorials">Video Tutorials</a>
+                <a class="nav-link scrollto" href="#translate_addon">Translate Addon</a>
+                <a class="nav-link scrollto" href="#trouble_shoot">Troubleshooting</a>
+
+                <a class="nav-link scrollto" href="#upgrade_notes">Upgrade Notes</a>
+                <a class="nav-link scrollto" href="#change_log">Change Log</a>
+                <a class="nav-link scrollto" href="#source_credit">Source & Credit</a>
+                <a class="nav-link scrollto sub-menu-sign" href="#theme_template_section">More Template & Themes</a>
+                <nav class="doc-sub-menu nav flex-column">
+                  <a class="nav-link scrollto" href="#wordpress_themes">WordPress Themes</a>
+                  <a class="nav-link scrollto" href="#wordpress_plugins">WordPress Plugins</a>
+                  <a class="nav-link scrollto" href="#html5_templates">HTML5 Templates</a>
+                </nav>
+
+                <small><i>Doc Last Update:</i> 20/03/2025</small>
+              </nav>
+              <!-- doc-menu-->
+            </div>
+
+            <h3 class="center alt">
+              Restrict KB Access by User Role - Knowledgebase Addon
+            </h3>
+
+            <div class="borderTop">
+              <div class="span-6 colborder info prepend-1">
+                <p class="prepend-top">
+                  <strong>
+                    Last Edited: 10/12/2024<br>
+                    Created: 18/11/2015<br>
+                    By: Md Mahbub Alam Khan<br>
+                    Email:
+                    <a href="mailto:hkhan.cse@gmail.com">hkhan.cse@gmail.com</a><br>
+                    Web Site:
+                    <a href="https://www.bluewindlab.net" target="_blank">bluewindlab.net</a><br>
+                  </strong>
+                </p>
+              </div>
+              <!-- end div .span-6 -->
+
+              <div class="span-12 last">
+                <p class="prepend-top append-0">
+                  Thank you for purchasing Restrict KB Access by User Role - Knowledgebase Addon.
+                  If you like this plugin, feel free to rate it five stars at CodeCanyon downloads section.
+                  If you encounter any problems please do not give a low rating but
+                  <a href="https://codecanyon.net/user/xenioushk#contact">contact me</a>
+                  first. So I can help you.
+                  Thank You!
+                </p>
 
 
+              </div>
+            </div>
+            <!-- end div .borderTop -->
+
+            <hr>
+
+            <h2 id="toc" class="alt">Table of Contents</h2>
+            <ol class="alpha">
+              <li>
+                <a href="#QuickIntroduction">Quick Introduction</a>
+              </li>
+              <li>
+                <a href="#howToInstall">Installation</a>
+              </li>
+              <li>
+                <a href="#howToUse">How To Use?</a>
+              </li>
+              <li>
+                <a href="#option_panel">Option Panel</a>
+              </li>
+              <li>
+                <a href="#upgradeNotes">Upgrade Notes</a>
+              </li>
+              <li>
+                <a href="#changelog">Change Log</a>
+              </li>
+              <li>
+                <a href="#credits">Credits</a>
+              </li>
+              <li>
+                <a href="#conclusion">Conclusion</a>
+              </li>
+            </ol>
+          </div>
+          <!-- doc-sidebar-->
+
+          <div class="doc-content col-md-9 col-12 order-1">
+
+            <div class="content-inner">
+
+              <h3 id="QuickIntroduction">
+                <strong>A. Quick Introduction?</strong>
+                -
+                <a href="#toc">top</a>
+              </h3>
+
+
+              <p>Are you looking for a way to manage and restrict knowledge base contents for specific types of users on
+                your
+                site?
+                <strong>Restrict KB Access by User Role - Knowledgebase Addon</strong> provides that easy and awesome
+                option
+                to
+                secure your knowledge base contents from global access.
+              </p>
+
+              <p>Addon provides you with premium and flexible settings. With just a few clicks, you can modify or
+                control
+                the
+                access to your knowledge base contents.
+                You can hide all restricted knowledge base contents from global users, or you can display them with a
+                small
+                lock
+                icon with a title to notify them about restricted items.
+              </p>
+
+              <p>Addon has an extensive options panel that allows you to manage global restriction settings, restricted
+                item
+                display settings, lock icon display settings, and custom message for locked content settings.
+                Addon automatically manages your sidebar knowledge base contents, related knowledge base contents, and
+                custom
+                knowledge template contents. </p>
+
+              <p>Addon comes with Quick/Bulk and custom meta box options to set user roles.
+                Administrator users can access all contents by default, and you can add more user roles with just a few
+                clicks.
+              </p>
+
+              <p>
+
+                Checkout plugin outlook in WordPress site-
+
+                <br />
+                <img src="screenshot/01_templify_kb.png" alt="" />
+
+              </p>
+
+
+              <hr>
+
+              <h3 id="howToInstall">
+                <strong>B. Installation:</strong>
+                -
+                <a href="#toc">top</a>
+              </h3>
+
+              <p class="notice">
+                You need to install
+                <a href="https://codecanyon.net/item/bwl-knowledge-base-manager/7972812?ref=xenioushk" target="_blank">
+                  BWL Knowledge Base Manager Plugin</a>
+                to use "Restrict KB Access by User Role Addon". Minimum version
+                <b>1.0.9</b>
+                required.
+              </p>
+
+              <h4>
+                <strong>
+                  - Steps:</strong>
+              </h4>
+              <ol class="number">
+                <li>Go to plugins section in your WordPress admin panel and click
+                  <b>Add New</b>
+                  to install plugin.
+                  <br />
+                  <img src="screenshot/install-plugins-process.png" alt="" />
+                </li>
+
+                <li>Now, upload the "restrict-kb-by-user-role.zip" file.</li>
+
+                <li>
+                  Once plugin successfully uploaded in your server you will get an message to activate it.
+                  Click on "Activate Plugin" Link and plugin will be ready to use.
+                </li>
+
+                <li>After activating plugins, you will redirect in plugins section of wp-admin panel and
+                  show new installed plugins information in there.<br />
+                  <img src="screenshot/installation.png" alt="" style="max-width: 900px; width: 100%;" />
+                </li>
+              </ol>
+
+              <h3 id="howToUse">
+                <strong>C. How To Use?</strong>
+                -
+                <a href="#toc">top</a>
+              </h3>
+
+              <p>- Once installation has been completed successfully,
+                Addon automatically start handling Knowledge Base categories, tags and
+                single post locked contents. Here goes the step by step process to lock a Knowledge Base Post.
+                <br />
+
+
+              </p>
+              <h4>
+                <strong>Step: 01</strong>
+              </h4>
+              <p>
+                Go to "All KB Items" and select A Knowledge Base post that you want to lock.
+                <br />
+                <img src="screenshot/02_step_01_select_post_for_lock.png" alt=""
+                  style="max-width: 900px; width: 100%;" />
+              </p>
+
+              <h4>
+                <strong>Step: 02</strong>
+              </h4>
+              <p>
+                In bottom of the Edit Page, you will find a section "BKB Access Restriction Settings". In that section
+                you
+                will
+                get options to set Knowledge base post access restriction settings. Finally click save/update button.
+                <br />
+                <img src="screenshot/02_step_02_set_user_role.png" alt="" style="max-width: 900px; width: 100%;" />
+              </p>
+
+              <h4>
+                <strong>Step: 03</strong>
+              </h4>
+              <p>Restriction Output:<br />
+                <img src="screenshot/02_step_03_restriction_output.png" alt="" />
+              </p>
+
+              <h4>
+                <strong>Quick/Bulk Edit Option:</strong>
+              </h4>
+              <p>You can also use Quick/Bulk Edit option to set restriction for multiple posts. To do this go to "All KB
+                Items"
+                section and
+                then when you put your mouse on a post you will get 'Quick Edit' link. Click on it and you will get
+                option
+                to
+                set
+                Access Restriction. Select
+                your preferable option and click update.
+                <br />
+                <img src="screenshot/02_04_quick_edit.png" alt="" style="max-width: 900px; width: 100%;" />
+              </p>
+
+              <p>For Bulk Edit, select multiple post and then click 'Edit' from top of the menu and click "Apply". You
+                will
+                get
+                option to set Access Restriction. Select
+                your preferable option and click update.
+                <br />
+                <img src="screenshot/02_05_bulk_edit.png" alt="" style="max-width: 900px; width: 100%;" />
+              </p>
+
+              <h4>
+                <strong>Administrator Panel Filter Option:</strong>
+              </h4>
+              <p>You can filter posts by user role from Administrator panel. Which gives you a nice overview about user
+                role
+                based
+                post access.
+                Also, you can see the Knowledge Base post locked/unlocked status from custom column.
+                <img src="screenshot/02_06_post_filter.png" alt="" style="max-width: 900px; width: 100%;" />
+              </p>
+
+              <h3 id="option_panel">
+                <strong>D. Option panel</strong>
+                -
+                <a href="#toc">top</a>
+              </h3>
+
+
+              <p>You can easily manage restriction from option panel. You can temporarily disable restriction for all
+                Knowledge Base posts, display restricted posts with other KB posts, show/hide 'Lock Icon' and set custom
+                message
+                for locked content. It's super easy to use.
+                <br />
+                <img src="screenshot/03_option_panel_output.png" alt="" style="max-width: 900px; width: 100%;" />
+              </p>
+
+              <hr />
+
+              <!-- Conclusion: -->
+              <h3 id="upgradeNotes">
+                <strong>E. Upgrade Notes</strong>
+                -
+                <a href="#toc">top</a>
+              </h3>
+              <h4 style="background: #ff9999; padding: 5px;">Please take a backup before update all files and folder.
+              </h4>
+
+              <p>
+                <b>2024, December, 10 - v 1.1.1
+                </b>
+                <br /><i>- Initial release</i>
+              </p>
+
+              <hr>
+
+              <!--  Conclusion -->
+              <h3 id="changelog">
+                <strong>F. Change Log</strong>
+                -
+                <a href="#toc">top</a>
+              </h3>
+
+              <div>
+
+                <div>
+                  <h4>2024, December, 10 - v 1.1.1</h4>
+                  <ul>
+                    <li>Updated: Plugin for WordPress 6.7.1</li>
+                    <li>Updated: Plugin language/translation file.</li>
+                    <li>Updated: Addon documentation.</li>
+                  </ul>
+                </div>
+
+                <h4>2024, September, 13 - v 1.1.0</h4>
+                <ul>
+                  <li>Fixed: KB post permission issue.</li>
+                  <li>Updated: Addon documentation.</li>
+                </ul>
+
+                <h4>2024, July, 16 - v 1.0.9</h4>
+                <ul>
+                  <li>Updated: Addon code.</li>
+                  <li>Updated: Addon documentation.</li>
+                </ul>
+
+                <h4>2023, September, 01 - v 1.0.8</h4>
+                <ul>
+                  <li>Updated: Restricted knowledgebase content icon.</li>
+                  <li>Updated: Addon documentation.</li>
+                </ul>
+
+              </div>
+
+              <p>
+                <b>2015, November, 18 - v 1.0.0
+                </b>
+                <br /><i>- Initial release</i>
+              </p>
+
+              <hr>
+              <h3 id="credits">
+                <strong>G. Credits</strong>
+                -
+                <a href="#toc">top</a>
+              </h3>
+              <p>- Ideas & Coded By
+                <a href="https://www.bluewindlab.net" target="_blank">Md Mahbub Alam Khan</a>
+              </p>
+              <p>- BWL Knowledge Base Manager Plugin Plugin By
+                <a href="https://codecanyon.net/item/bwl-knowledge-base-manager/7972812?ref=xenioushk"
+                  target="_blank">xenioushk</a>
+              </p>
+
+              <!-- Conclusion: -->
+              <h3 id="conclusion">
+                <strong>H. Conclusion:</strong>
+                -
+                <a href="#toc">top</a>
+              </h3>
+              <p>Once again, thank you so much for purchasing Restrict KB Access by User Role - Knowledgebase Addon.
+              </p>
+
+              <p class="append-bottom alt large">
+                <strong>Md. Mahbub Alam Khan</strong>
+              </p>
+              <p>
+                <a href="#toc">Go To Table of Contents</a>
+              </p>
+
+              <!-- Our Template & Themes Section  -->
+
+              <section id="theme_template_section" class="doc-section">
+                <h2 class="section-title">Our Themes & Templates</h2>
+
+                <div id="wordpress_themes" class="section-block">
+                  <div class="row">
+                    <div class="col-md-12 col-12">
+                      <h3 class="block-title">WordPress Themes</h3>
+                      <ol class="our-products list" id="bwl_wp_themes"></ol>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="wordpress_plugins" class="section-block">
+                  <div class="row">
+                    <div class="col-md-12 col-12">
+                      <h3 class="block-title">WordPress Plugins</h3>
+                      <ol class="our-products list" id="bwl_wp_plugins"></ol>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="html5_templates" class="section-block">
+                  <div class="row">
+                    <div class="col-md-12 col-12">
+                      <h3 class="block-title">HTML5 Themes</h3>
+                      <ol class="our-products list" id="bwl_html_templates"></ol>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+            </div>
+            <!-- content-inner-->
+          </div>
+          <!-- doc-content-->
+        </div>
+        <!-- doc-body-->
       </div>
+      <!-- container-->
     </div>
-    <!-- end div .borderTop -->
-
-    <hr>
-
-    <h2 id="toc" class="alt">Table of Contents</h2>
-    <ol class="alpha">
-      <li>
-        <a href="#QuickIntroduction">Quick Introduction</a>
-      </li>
-      <li>
-        <a href="#howToInstall">Installation</a>
-      </li>
-      <li>
-        <a href="#howToUse">How To Use?</a>
-      </li>
-      <li>
-        <a href="#option_panel">Option Panel</a>
-      </li>
-      <li>
-        <a href="#upgradeNotes">Upgrade Notes</a>
-      </li>
-      <li>
-        <a href="#changelog">Change Log</a>
-      </li>
-      <li>
-        <a href="#credits">Credits</a>
-      </li>
-      <li>
-        <a href="#conclusion">Conclusion</a>
-      </li>
-    </ol>
-
-
-    <hr />
-
-    <h3 id="QuickIntroduction">
-      <strong>A. Quick Introduction?</strong>
-      -
-      <a href="#toc">top</a>
-    </h3>
-
-
-    <p>Are you looking for a way to manage and restrict knowledge base contents for specific types of users on your
-      site?
-      <strong>Restrict KB Access by User Role - Knowledgebase Addon</strong> provides that easy and awesome option to
-      secure your knowledge base contents from global access.
-    </p>
-
-    <p>Addon provides you with premium and flexible settings. With just a few clicks, you can modify or control the
-      access to your knowledge base contents.
-      You can hide all restricted knowledge base contents from global users, or you can display them with a small lock
-      icon with a title to notify them about restricted items.
-    </p>
-
-    <p>Addon has an extensive options panel that allows you to manage global restriction settings, restricted item
-      display settings, lock icon display settings, and custom message for locked content settings.
-      Addon automatically manages your sidebar knowledge base contents, related knowledge base contents, and custom
-      knowledge template contents. </p>
-
-    <p>Addon comes with Quick/Bulk and custom meta box options to set user roles.
-      Administrator users can access all contents by default, and you can add more user roles with just a few clicks.
-    </p>
-
-    <p>
-
-      Checkout plugin outlook in WordPress site-
-
-      <br />
-      <img src="screenshot/01_templify_kb.png" alt="" />
-
-    </p>
-
-
-    <hr>
-
-    <h3 id="howToInstall">
-      <strong>B. Installation:</strong>
-      -
-      <a href="#toc">top</a>
-    </h3>
-
-    <p class="notice">
-      You need to install
-      <a href="https://codecanyon.net/item/bwl-knowledge-base-manager/7972812?ref=xenioushk" target="_blank">
-        BWL Knowledge Base Manager Plugin</a>
-      to use "Restrict KB Access by User Role Addon". Minimum version
-      <b>1.0.9</b>
-      required.
-    </p>
-
-    <h4>
-      <strong>
-        - Steps:</strong>
-    </h4>
-    <ol class="number">
-      <li>Go to plugins section in your WordPress admin panel and click
-        <b>Add New</b>
-        to install plugin.
-        <br />
-        <img src="screenshot/install-plugins-process.png" alt="" />
-      </li>
-
-      <li>Now, upload the "restrict-kb-by-user-role.zip" file.</li>
-
-      <li>
-        Once plugin successfully uploaded in your server you will get an message to activate it.
-        Click on "Activate Plugin" Link and plugin will be ready to use.
-      </li>
-
-      <li>After activating plugins, you will redirect in plugins section of wp-admin panel and
-        show new installed plugins information in there.<br />
-        <img src="screenshot/installation.png" alt="" style="max-width: 900px; width: 100%;" />
-      </li>
-    </ol>
-
-    <h3 id="howToUse">
-      <strong>C. How To Use?</strong>
-      -
-      <a href="#toc">top</a>
-    </h3>
-
-    <p>- Once installation has been completed successfully,
-      Addon automatically start handling Knowledge Base categories, tags and
-      single post locked contents. Here goes the step by step process to lock a Knowledge Base Post.
-      <br />
-
-
-    </p>
-    <h4>
-      <strong>Step: 01</strong>
-    </h4>
-    <p>
-      Go to "All KB Items" and select A Knowledge Base post that you want to lock.
-      <br />
-      <img src="screenshot/02_step_01_select_post_for_lock.png" alt="" style="max-width: 900px; width: 100%;" />
-    </p>
-
-    <h4>
-      <strong>Step: 02</strong>
-    </h4>
-    <p>
-      In bottom of the Edit Page, you will find a section "BKB Access Restriction Settings". In that section you will
-      get options to set Knowledge base post access restriction settings. Finally click save/update button.
-      <br />
-      <img src="screenshot/02_step_02_set_user_role.png" alt="" style="max-width: 900px; width: 100%;" />
-    </p>
-
-    <h4>
-      <strong>Step: 03</strong>
-    </h4>
-    <p>Restriction Output:<br />
-      <img src="screenshot/02_step_03_restriction_output.png" alt="" />
-    </p>
-
-    <h4>
-      <strong>Quick/Bulk Edit Option:</strong>
-    </h4>
-    <p>You can also use Quick/Bulk Edit option to set restriction for multiple posts. To do this go to "All KB Items"
-      section and
-      then when you put your mouse on a post you will get 'Quick Edit' link. Click on it and you will get option to set
-      Access Restriction. Select
-      your preferable option and click update.
-      <br />
-      <img src="screenshot/02_04_quick_edit.png" alt="" style="max-width: 900px; width: 100%;" />
-    </p>
-
-    <p>For Bulk Edit, select multiple post and then click 'Edit' from top of the menu and click "Apply". You will get
-      option to set Access Restriction. Select
-      your preferable option and click update.
-      <br />
-      <img src="screenshot/02_05_bulk_edit.png" alt="" style="max-width: 900px; width: 100%;" />
-    </p>
-
-    <h4>
-      <strong>Administrator Panel Filter Option:</strong>
-    </h4>
-    <p>You can filter posts by user role from Administrator panel. Which gives you a nice overview about user role based
-      post access.
-      Also, you can see the Knowledge Base post locked/unlocked status from custom column.
-      <img src="screenshot/02_06_post_filter.png" alt="" style="max-width: 900px; width: 100%;" />
-    </p>
-
-    <h3 id="option_panel">
-      <strong>D. Option panel</strong>
-      -
-      <a href="#toc">top</a>
-    </h3>
-
-
-    <p>You can easily manage restriction from option panel. You can temporarily disable restriction for all
-      Knowledge Base posts, display restricted posts with other KB posts, show/hide 'Lock Icon' and set custom message
-      for locked content. It's super easy to use.
-      <br />
-      <img src="screenshot/03_option_panel_output.png" alt="" style="max-width: 900px; width: 100%;" />
-    </p>
-
-    <hr />
-
-    <!-- Conclusion: -->
-    <h3 id="upgradeNotes">
-      <strong>E. Upgrade Notes</strong>
-      -
-      <a href="#toc">top</a>
-    </h3>
-    <h4 style="background: #ff9999; padding: 5px;">Please take a backup before update all files and folder.</h4>
-
-    <p>
-      <b>2024, December, 10 - v 1.1.1
-      </b>
-      <br /><i>- Initial release</i>
-    </p>
-
-    <hr>
-
-    <!--  Conclusion -->
-    <h3 id="changelog">
-      <strong>F. Change Log</strong>
-      -
-      <a href="#toc">top</a>
-    </h3>
-
-    <div>
-
-      <div>
-        <h4>2024, December, 10 - v 1.1.1</h4>
-        <ul>
-          <li>Updated: Plugin for WordPress 6.7.1</li>
-          <li>Updated: Plugin language/translation file.</li>
-          <li>Updated: Addon documentation.</li>
-        </ul>
-      </div>
-
-      <h4>2024, September, 13 - v 1.1.0</h4>
-      <ul>
-        <li>Fixed: KB post permission issue.</li>
-        <li>Updated: Addon documentation.</li>
-      </ul>
-
-      <h4>2024, July, 16 - v 1.0.9</h4>
-      <ul>
-        <li>Updated: Addon code.</li>
-        <li>Updated: Addon documentation.</li>
-      </ul>
-
-      <h4>2023, September, 01 - v 1.0.8</h4>
-      <ul>
-        <li>Updated: Restricted knowledgebase content icon.</li>
-        <li>Updated: Addon documentation.</li>
-      </ul>
-
-    </div>
-
-    <p>
-      <b>2015, November, 18 - v 1.0.0
-      </b>
-      <br /><i>- Initial release</i>
-    </p>
-
-    <hr>
-    <h3 id="credits">
-      <strong>G. Credits</strong>
-      -
-      <a href="#toc">top</a>
-    </h3>
-    <p>- Ideas & Coded By
-      <a href="https://www.bluewindlab.net" target="_blank">Md Mahbub Alam Khan</a>
-    </p>
-    <p>- BWL Knowledge Base Manager Plugin Plugin By
-      <a href="https://codecanyon.net/item/bwl-knowledge-base-manager/7972812?ref=xenioushk"
-        target="_blank">xenioushk</a>
-    </p>
-
-    <!-- Conclusion: -->
-    <h3 id="conclusion">
-      <strong>H. Conclusion:</strong>
-      -
-      <a href="#toc">top</a>
-    </h3>
-    <p>Once again, thank you so much for purchasing Restrict KB Access by User Role - Knowledgebase Addon.
-    </p>
-
-    <p class="append-bottom alt large">
-      <strong>Md. Mahbub Alam Khan</strong>
-    </p>
-    <p>
-      <a href="#toc">Go To Table of Contents</a>
-    </p>
-
-    <hr class="space">
+    <!-- doc-wrapper-->
   </div>
-  <!-- end div .container -->
+  <!-- page-wrapper-->
 
+  <footer id="footer" class="footer text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 text-left">
+          <span>Copyright &copy; 2021 - <a href="https://bluewindlab.net" target="_blank"
+              class="text-info">BlueWindLab</a>. All Rights Reserved.</span>
+        </div>
+        <div class="col-6 text-right">
+          <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+          <span>Designed by <a href="https://themes.3rdwavemedia.com/" target="_blank" class="text-info">Xiaoying
+              Riley</a>.</span>
+        </div>
+      </div>
+    </div>
+    <!-- container-->
+  </footer>
+  <!-- footer-->
+
+  <a id="backTop">Back To Top</a>
+
+  <!-- Main Javascript -->
+  <script type="text/javascript" src="https://xenioushk.github.io/bwl-static-assets/doc-assets/js/all.min.js"></script>
+  <script type="text/javascript" src="https://xenioushk.github.io/bwl-static-assets/doc-assets/js/main.js"></script>
+  <script type="text/javascript" src="https://xenioushk.github.io/bwl-static-assets/doc-assets/js/products.js"></script>
 </body>
 
 </html>

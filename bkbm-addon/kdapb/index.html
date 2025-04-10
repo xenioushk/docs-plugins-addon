@@ -1,477 +1,549 @@
-<!doctype html>
-<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
-<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
-<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
-<!--[if (gt IE 7)|!(IE)]><!-->
-  <html
-  lang="en-us"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
 
-    <title>KB Display As Blog Post - Knowledge Base Addon Documentation</title>
+<head>
+  <title>KB Display As Blog Post - Knowledge Base Addon Documentation</title>
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="KB Display As Blog Post - Knowledge Base Addon Documentation">
-    <meta name="author" content="bluewindlab">
+  <meta name="description" content="KB Display As Blog Post - Knowledge Base Addon Documentation">
+  <meta name="author" content="Mahbub Alam Khan" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+    rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://xenioushk.github.io/bwl-static-assets/doc-assets/css/all.min.css" />
+  <link rel="stylesheet" href="https://xenioushk.github.io/bwl-static-assets/doc-assets/css/styles.css" />
+</head>
 
-    <link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
-    <link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
-    <link rel="stylesheet" href="assets/css/custom-styles.css" media="all">
+<body class="body-green">
+
+  <div class="page-wrapper">
+    <!-- ******Header****** -->
+    <header id="header" class="header">
+      <div class="container">
+        <div class="branding">
+          <h1 class="logo text-center">
+            <a href="index.html">
+              <span class="text-bold">
+                KB Display As Blog Post <br />
+                Knowledge Base Addon Documentation
+              </span>
+            </a>
+          </h1>
+        </div>
+        <!-- branding-->
+      </div>
+      <!-- container-->
+    </header>
+    <!-- header-->
+    <div class="doc-wrapper">
+      <div class="container">
+        <div class="doc-body row">
+          <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+
+            <div id="doc-nav" class="doc-nav">
+              <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+                <a class="nav-link scrollto sub-menu-sign" href="#addon-overview-section">Addon Overview &
+                  Installation</a>
+                <nav class="doc-sub-menu nav flex-column">
+                  <a class="nav-link scrollto" href="#requirements">Requirements</a>
+                  <a class="nav-link scrollto" href="#installation_steps">Installation Steps</a>
+                </nav>
+                <!-- nav-->
+
+                <a class="nav-link scrollto" href="#how_to_operate">Operate Addon</a>
+
+                <a class="nav-link scrollto sub-menu-sign" href="#plugin_shortcodes">Addon Shortcodes</a>
+                <nav class="doc-sub-menu nav flex-column">
+                  <a class="nav-link scrollto" href="#display_search_box">Display Search Box</a>
+                  <a class="nav-link scrollto" href="#custom_search_placeholder">Custom Search Placeholder</a>
+                </nav>
+
+                <a class="nav-link scrollto" href="#addon_option_panel">Addon Option Panel</a>
+
+                <a class="nav-link scrollto" href="#video_tutorials">Video Tutorials</a>
+                <a class="nav-link scrollto" href="#translate_addon">Translate Addon</a>
+                <a class="nav-link scrollto" href="#trouble_shoot">Troubleshooting</a>
+
+                <a class="nav-link scrollto" href="#upgrade_notes">Upgrade Notes</a>
+                <a class="nav-link scrollto" href="#change_log">Change Log</a>
+                <a class="nav-link scrollto" href="#source_credit">Source & Credit</a>
+                <a class="nav-link scrollto sub-menu-sign" href="#theme_template_section">More Template & Themes</a>
+                <nav class="doc-sub-menu nav flex-column">
+                  <a class="nav-link scrollto" href="#wordpress_themes">WordPress Themes</a>
+                  <a class="nav-link scrollto" href="#wordpress_plugins">WordPress Plugins</a>
+                  <a class="nav-link scrollto" href="#html5_templates">HTML5 Templates</a>
+                </nav>
+
+                <small><i>Doc Last Update:</i> 20/03/2025</small>
+              </nav>
+              <!-- doc-menu-->
+            </div>
+
+            <a href="#documenter_cover" id="documenter_logo"></a>
+            <ul id="documenter_nav">
+              <li>
+                <a class="current" href="#documenter_cover">Start</a>
+              </li>
+              <li>
+                <a href="#requirements">Requirements</a>
+              </li>
+              <li>
+                <a href="#theme_installation" title="Plugin Installation">Plugin Installation</a>
+              </li>
+              <li>
+                <a href="#how_to_use" title="How To Use?">How To Use?</a>
+              </li>
+              <li>
+                <a href="#plugin_option_panel" title="Option Panel">Option Panel</a>
+              </li>
+              <li>
+                <a href="#upgrade_notes" title="Upgrade Notes">Upgrade Notes</a>
+              </li>
+              <li>
+                <a href="#changelog" title="Change Log">Change Log</a>
+              </li>
+              <li>
+                <a href="#credits" title="Sources and Credits">Sources and Credits</a>
+              </li>
+              <li>
+                <a href="#more_products" title="More Products">Our Products</a>
+              </li>
+            </ul>
+            <div id="documenter_copyright">Copyright @ bluewindlab.net 2013 - 2023</div>
+          </div>
+          <!-- doc-sidebar-->
+
+          <div class="doc-content col-md-9 col-12 order-1">
+            <div class="content-inner">
+
+              <!--  Overview Section -->
+              <section id="addon-overview-section" class="doc-section">
+                <h2 class="section-title">Ajaxified FAQ Search - Advanced FAQ Addon</h2>
+                <div class="section-block">
+                  <ul>
+                    <li><strong>Plugin Version:</strong> 1.1.9</li>
+                    <li><strong>Plugin Last Update:</strong> 20/03/2025</li>
+                    <li><strong>Plugin Create Date:</strong> 04/05/2015</li>
+                    <li><strong>Web Site: </strong><a href="https://bluewindlab.net/">https://bluewindlab.net</a></li>
+                    <li><strong>Email Us:</strong> <a href="mailto:hkhan.cse@gmail.com">hkhan.cse@gmail.com</a></li>
+                    <li><strong>Developed By:</strong> Md Mahbub Alam Khan</li>
+                    <li><strong>Skype: </strong> bluewindlab</li>
+                  </ul>
+                  <p>
+                    If you like this plugin, please spare a minute to rate it. <br />
+                    <a href="https://codecanyon.net/item/ajaxified-faq-search-advanced-faq-addon/12033214"
+                      target="_blank">https://codecanyon.net/item/ajaxified-faq-search-advanced-faq-addon/12033214</a>
+                    <br />
+                    If you want any support, Please feel free to contact me via my profile page
+                    <a href="https://codecanyon.net/user/xenioushk"
+                      target="_blank">https://codecanyon.net/user/xenioushk</a>.
+                  </p>
+
+                  <h3 class="block-title">Addon Overview</h3>
+
+                  <p><strong>Ajaxified FAQ Search</strong> is a powerful addon for BWL Advanced FAQ Manager that allows
+                    you're user to find <strong>Frequently Ask Questions</strong> quickly & easily from you're website.
+                  </p>
+
+                  <p>This addon comes with 25+ animated modal window with sticky button for the best user
+                    experience(UX). Plugin comes with almost zero configruation and zero coding requirement feature.</p>
+
+                  <p>Addon also brings <strong>extensive option panel</strong> that allows you to configure search
+                    window settings according to you're need. You can set window color , Turn ON/OFF search sticky
+                    button, Change sticky button colors, set Pagination, set animation and many more.</p>
+
+                  <div class="doc-img-box">
+                    <a href="img/addon_output/demo.png" class="venobox">
+                      <img class="img-fluid" src="img/addon_output/demo.png" alt="doc_img" />
+                    </a>
+                  </div>
+                </div>
+              </section>
+
+              <section id="documenter_cover">
+
+                <h1>KB Display As Blog Post - Knowledge Base Addon</h1>
+                <hr>
+                <ul>
+                  <li>
+                    <strong>Plugin Version:</strong>
+                    1.0.8
+                  </li>
+                  <li>
+                    <strong>Plugin Last Update:</strong>
+                    28/07/2023
+                  </li>
+                  <li>
+                    <strong>Plugin Create Date:</strong>
+                    13/04/2015
+                  </li>
+
+                  <li>
+                    <strong>Premium Support:
+                    </strong>
+                    <a href="https://codecanyon.net/item/kb-display-as-blog-post-knowledge-base-addon/11245275/support/contact"
+                      target="_blank">Send A Message</a>
+                  </li>
+                  <li>
+                    <strong>Web Site:
+                    </strong>
+                    <a href="https://bluewindlab.net/">https://bluewindlab.net</a>
+                  </li>
+                  <li>
+                    <strong>Email Us:</strong>
+                    <a href="mailto:hkhan.cse@gmail.com">hkhan.cse@gmail.com</a>
+                  </li>
+                  <li>
+                    <strong>Developed By:</strong>
+                    bluewindlab
+                  </li>
+                  <li>
+                    <strong>Skype:
+                    </strong>
+                    bluewindlab
+                  </li>
+
+                </ul>
+                <p>
+                  If you like this theme please spare a minute to rate it.
+                  <br />
+                  If you want any support, Please feel free to contact me via my profile page
+                  <a href="https://codecanyon.net/user/xenioushk"
+                    target="_blank">https://codecanyon.net/user/xenioushk</a>.
+                </p>
+              </section>
+
+              <section id="requirements">
+                <div class="page-header">
+                  <h3>Requirements</h3>
+                  <hr class="notop">
+                </div>
+                <p>
+                  You need at least WordPress version 4.8+ installed for this plugin to work properly.
+                  It is strongly recommended that you always use the latest stable version of WordPress to ensure all
+                  known
+                  bugs
+                  and security issues are fixed.
+                  <br />Other requirements:
+                </p>
+                <ul>
+                  <li>PHP version 5.4.45 or greater.</li>
+                  <li>MySQL version 5.5.51 or greater.</li>
+                  <li>
+                    <strong>BWL Knowledge Base Manager Plugin (Minimum version 1.0.9 required ).</strong>
+                  </li>
+                </ul>
+              </section>
+
+              <section id="theme_installation">
+                <div class="page-header">
+                  <h3>Plugin Installation</h3>
+                  <hr class="notop">
+                </div>
+
+                <p>To install a plugin, you must first upload the plugin files and then activate the theme. The plugin
+                  files
+                  can
+                  be uploaded in two ways:</p>
+                <ul>
+                  <li>
+                    <strong>FTP Upload:</strong>
+                    Using your FTP client, upload the non-zipped plugin folder into the /wp-content/plugins/ folder on
+                    your
+                    server.
+                  </li>
+                  <li>
+                    <strong>WordPress Upload:</strong>
+                    Navigate to Plugins >> Add New >> Upload Plugin.
+                    Go to browse, and select the zipped theme folder. Hit "Install Now" and the theme will be uploaded
+                    and
+                    installed.
+                  </li>
+                </ul>
+
+                <p>
+                  <strong>Step 01:</strong>
+                  Go to WP admin dashboard and click on
+                  <em>Plugins >> Add New</em>.
+                </p>
+
+                <p><img src="img/install-plugins-process.png" alt="doc_img" /></p>
+
+                <p>
+                  <strong>Step 02:</strong>
+                  Click on
+                  <em>
+                    Upload Plugin</em>.
+                </p>
+
+                <p><img src="img/2.jpg" alt="doc_img" /></p>
+
+                <p>
+                  <strong>Step 03:</strong>
+                  Once plugin successfully uploaded in your server you will get an message to activate it.
+                  Click on "Activate Plugin" Link and plugin will be ready to use .
+
+                  <br />
+
+                  After activating plugin, you will redirect in plugins section of wp-admin panel and show new installed
+                  plugins
+                  information in there.
+
+                </p>
+
+                <p><img src="img/installation.png" alt="doc_img" /></p>
+
+              </section>
+
+              <section id="how_to_use">
+
+                <div class="page-header">
+                  <h3>How to use?</h3>
+                  <hr class="notop">
+                </div>
+
+                <p>- Once you completed installation process, plugin will automatically include all Knowledge Base items
+                  with
+                  you're blog posts
+                  according to date order. But, You can control Knowledge Base posts display using bulk/quick edit.
+                </p>
+                <p>
+                  <br />
+                  <img src="img/02_bkb_kbdabp_demo.png" alt="" />
+                </p>
+
+                <p>- Addon comes with built-in show/hide custom meta box option to control Knowledge Base posts display.
+                  This way, you can easily handle view status, while you're adding/editing KB posts.
+                </p>
+                <p>
+                  <br />
+                  <img src="img/03_kb_post_editing.png" alt="" />
+                </p>
+
+                <p>- If you want to change settings for single Knowledge Base post, then
+                  you can use quick edit(inline editing) option.
+                </p>
+
+                <p>
+                  <br />
+                  <img src="img/04_quick_edit.png" alt="" />
+                </p>
+
+                <p>- If you want to change settings for multiple Knowledge Base post, then
+                  you can use bulk edit option.
+                </p>
+
+                <p>
+                  <br />
+                  <img src="img/05_bulk_edit.png" alt="" />
+                </p>
+
+                <p>
+                  - Addon allows you to upload featured image for Knowledge Base items. This way, you can easily set
+                  featured
+                  image for Knowledge Base Post and display with blog post(Theme Support Required).
+                </p>
+
+                <p>
+                  <br />
+                  <img src="img/06_custom_featured_image.png" alt="" />
+                </p>
 
 
-  </head>
-  <body class="documenter-project-venture-modern-environmental-wordpresstheme">
+              </section>
 
-    <div id="documenter_sidebar">
-      <a href="#documenter_cover" id="documenter_logo"></a>
-      <ul id="documenter_nav">
-        <li>
-          <a class="current" href="#documenter_cover">Start</a>
-        </li>
-        <li>
-          <a href="#requirements">Requirements</a>
-        </li>
-        <li>
-          <a href="#theme_installation" title="Plugin Installation">Plugin Installation</a>
-        </li>
-        <li>
-          <a href="#how_to_use" title="How To Use?">How To Use?</a>
-        </li>
-        <li>
-          <a href="#plugin_option_panel" title="Option Panel">Option Panel</a>
-        </li>
-        <li>
-          <a href="#upgrade_notes" title="Upgrade Notes">Upgrade Notes</a>
-        </li>
-        <li>
-          <a href="#changelog" title="Change Log">Change Log</a>
-        </li>
-        <li>
-          <a href="#credits" title="Sources and Credits">Sources and Credits</a>
-        </li>
-        <li>
-          <a href="#more_products" title="More Products">Our Products</a>
-        </li>
-      </ul>
-      <div id="documenter_copyright">Copyright @ bluewindlab.net  2013 - 2023</div>
+              <section id="plugin_option_panel">
+                <div class="page-header">
+                  <h3>Option Panel</h3>
+                  <hr class="notop">
+                </div>
+
+                <p>
+                  From version 1.0.3 we added an unique option to include Knowledge base posts in to Regular blog post
+                  RSS
+                  feed.
+                  To enable this option go to Plugin
+                  <strong>Option panel > General</strong>
+                  tab and you will get an option
+                  <strong>"Include KB in Blog Feed? "</strong>.
+                  Just turn it
+                  <strong>ON</strong>
+                  and KB post automatically included in to blog feed.
+                </p>
+                <p><img src="img/rss_blog_feed.png" alt="" /></p>
+
+
+              </section>
+
+              <section id="upgrade_notes">
+                <div class="page-header">
+                  <h3>Upgrade Notes:</h3>
+                  <hr class="notop">
+                </div>
+
+                <h4 style="background: #ff9999; padding: 5px;">Please take a backup before update all files and folder.
+                </h4>
+                <p>
+                  <b>2018, January, 05 - v 1.0.4
+                  </b>
+                  <br />Replace Addon all files and folders.
+                </p>
+                <p>
+                  <b>2016, June, 07 - v 1.0.3
+                  </b>
+                  <br />Replace Addon all files and folders.
+                </p>
+                <p>
+                  <b>2016, April, 27 - v 1.0.2
+                  </b>
+                  <br />Replace Addon all files and folders.
+                </p>
+                <p>
+                  <b>2015, November, 20 - v 1.0.1
+                  </b>
+                  <br />Replace Addon all files and folders.
+                </p>
+
+                <p>
+                  <b>2015, April, 13 - v 1.0.0
+                  </b>
+                  <br />Initial release.
+                </p>
+
+
+              </section>
+
+              <section id="changelog">
+                <div class="page-header">
+                  <h3>Change Log</h3>
+                  <hr class="notop">
+                </div>
+
+                <p>
+                  <b>2018, January, 05 - v 1.0.4
+                  </b>
+                  <br />- Fixed minor styling issues.
+                  <br />- Improved Documentation.
+                </p>
+
+
+                <p>
+                  <b>2016, June, 07 - v 1.0.3
+                  </b>
+                  <br />- Fix multisite notification issue.
+                  <br />- Add option to include KB post in to Blog Feed.
+                  <br />- Improved Documentation.
+                </p>
+
+                <p>
+                  <b>2016, April, 27 - v 1.0.2
+                  </b>
+                  <br />- Added Multisite support.
+                  <br />- Improved Addon Performance.
+                  <br />- Improved Documentation.
+                </p>
+
+                <p>
+                  <b>2015, November, 20 - v 1.0.1
+                  </b>
+                  <br />- Improved Addon Performance.
+                  <br />- Improved Documentation.
+                </p>
+
+                <p>
+                  <b>2015, April, 13 - v 1.0.0
+                  </b>
+                  <br />- Initial release.
+                </p>
+
+              </section>
+
+              <section id="credits">
+                <div class="page-header">
+                  <h3>Sources and Credits</h3>
+                  <hr class="notop">
+                </div>
+
+                <p>- Ideas By
+                  <a href="https://bluewindlab.net" target="_blank">BlueWindLab</a>
+                </p>
+                <p>- Color Picker By
+                  <a href="https://www.eyecon.ro/colorpicker" target="_blank">https://www.eyecon.ro/colorpicker</a>
+                </p>
+              </section>
+
+              <!-- Our Template & Themes Section  -->
+
+              <section id="theme_template_section" class="doc-section">
+                <h2 class="section-title">Our Themes & Templates</h2>
+
+                <div id="wordpress_themes" class="section-block">
+                  <div class="row">
+                    <div class="col-md-12 col-12">
+                      <h3 class="block-title">WordPress Themes</h3>
+                      <ol class="our-products list" id="bwl_wp_themes"></ol>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="wordpress_plugins" class="section-block">
+                  <div class="row">
+                    <div class="col-md-12 col-12">
+                      <h3 class="block-title">WordPress Plugins</h3>
+                      <ol class="our-products list" id="bwl_wp_plugins"></ol>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="html5_templates" class="section-block">
+                  <div class="row">
+                    <div class="col-md-12 col-12">
+                      <h3 class="block-title">HTML5 Themes</h3>
+                      <ol class="our-products list" id="bwl_html_templates"></ol>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <!-- content-inner-->
+          </div>
+          <!-- doc-content-->
+        </div>
+        <!-- doc-body-->
+      </div>
+      <!-- container-->
     </div>
-
-    <div id="documenter_content">
-
-      <section id="documenter_cover">
-
-        <h1>KB Display As Blog Post - Knowledge Base Addon</h1>
-        <hr>
-        <ul>
-          <li>
-            <strong>Plugin Version:</strong>
-            1.0.8</li>
-            <li>
-              <strong>Plugin Last Update:</strong>
-              28/07/2023</li>
-          <li>
-            <strong>Plugin Create Date:</strong>
-            13/04/2015</li>
-          
-          <li>
-            <strong>Premium Support:
-            </strong>
-            <a href="https://codecanyon.net/item/kb-display-as-blog-post-knowledge-base-addon/11245275/support/contact" target="_blank">Send A Message</a>
-          </li>
-          <li>
-            <strong>Web Site:
-            </strong>
-            <a href="https://bluewindlab.net/">https://bluewindlab.net</a>
-          </li>
-          <li>
-            <strong>Email Us:</strong>
-            <a href="mailto:hkhan.cse@gmail.com">hkhan.cse@gmail.com</a>
-          </li>
-          <li>
-            <strong>Developed By:</strong>
-            bluewindlab
-          </li>
-          <li>
-            <strong>Skype:
-            </strong>
-            bluewindlab</li>
-
-        </ul>
-        <p>
-          If you like this theme please spare a minute to rate it.
-          <br/>
-          If you want any support, Please feel free to contact me via my profile page
-          <a href="https://codecanyon.net/user/xenioushk" target="_blank">https://codecanyon.net/user/xenioushk</a>.
-        </p>
-      </section>
-
-      <section id="requirements">
-        <div class="page-header">
-          <h3>Requirements</h3><hr class="notop"></div>
-        <p>
-          You need at least WordPress version 4.8+ installed for this plugin to work properly. 
-                                        It is strongly recommended that you always use the latest stable version of WordPress to ensure all known bugs and security issues are fixed.
-          <br/>Other requirements:
-        </p>
-        <ul>
-          <li>PHP version 5.4.45 or greater.</li>
-          <li>MySQL version 5.5.51 or greater.</li>
-          <li>
-            <strong>BWL Knowledge Base Manager Plugin (Minimum version 1.0.9 required ).</strong>
-          </li>
-        </ul>
-      </section>
-
-      <section id="theme_installation">
-        <div class="page-header">
-          <h3>Plugin Installation</h3><hr class="notop"></div>
-
-        <p>To install a plugin, you must first upload the plugin files and then activate the theme. The plugin files can be uploaded in two ways:</p>
-        <ul>
-          <li>
-            <strong>FTP Upload:</strong>
-            Using your FTP client, upload the non-zipped plugin folder into the /wp-content/plugins/ folder on your server.
-          </li>
-          <li>
-            <strong>WordPress Upload:</strong>
-            Navigate to Plugins >> Add New >> Upload Plugin. 
-                                                Go to browse, and select the zipped theme folder. Hit "Install Now" and the theme will be uploaded and installed.
-          </li>
-        </ul>
-
-        <p>
-          <strong>Step 01:</strong>
-          Go to WP admin dashboard and click on
-          <em>Plugins >> Add New</em>.</p>
-
-        <p><img src="img/install-plugins-process.png" alt="doc_img"/></p>
-
-        <p>
-          <strong>Step 02:</strong>
-          Click on
-          <em>
-            Upload Plugin</em>.</p>
-
-        <p><img src="img/2.jpg" alt="doc_img"/></p>
-
-        <p>
-          <strong>Step 03:</strong>
-          Once plugin successfully uploaded in your server you will get an message to activate it. 
-                                        Click on "Activate Plugin" Link and plugin will be ready to use .
-
-          <br/>
-
-          After activating plugin, you will redirect in plugins section of wp-admin panel and show new installed plugins information in there.
-
-        </p>
-
-        <p><img src="img/installation.png" alt="doc_img"/></p>
-
-      </section>
-
-      <section id="how_to_use">
-
-        <div class="page-header">
-          <h3>How to use?</h3><hr class="notop"></div>
-
-        <p>- Once you completed installation process, plugin will automatically include all Knowledge Base items with you're blog posts
-                                        according to date order. But, You can control Knowledge Base posts display using bulk/quick edit.
-        </p>
-        <p>
-          <br/>
-          <img src="img/02_bkb_kbdabp_demo.png" alt=""/>
-        </p>
-
-        <p>- Addon comes with built-in show/hide custom meta box option to control Knowledge Base posts display. 
-                                        This way, you can easily handle view status, while you're adding/editing KB posts.
-        </p>
-        <p>
-          <br/>
-          <img src="img/03_kb_post_editing.png" alt=""/>
-        </p>
-
-        <p>- If you want to change settings for single Knowledge Base post, then 
-                                        you can use quick edit(inline editing) option.
-        </p>
-
-        <p>
-          <br/>
-          <img src="img/04_quick_edit.png" alt=""/>
-        </p>
-
-        <p>- If you want to change settings for multiple Knowledge Base post, then 
-                                        you can use bulk edit option.
-        </p>
-
-        <p>
-          <br/>
-          <img src="img/05_bulk_edit.png" alt=""/>
-        </p>
-
-        <p>
-          - Addon allows you to upload featured image for Knowledge Base items. This way, you can easily set featured image for Knowledge Base Post and display with blog post(Theme Support Required).
-        </p>
-
-        <p>
-          <br/>
-          <img src="img/06_custom_featured_image.png" alt=""/>
-        </p>
-
-
-      </section>
-
-      <section id="plugin_option_panel">
-        <div class="page-header">
-          <h3>Option Panel</h3><hr class="notop"></div>
-
-        <p>
-          From version 1.0.3 we added an unique option to include Knowledge base posts in to Regular blog post RSS feed. 
-                                        To enable this option go to Plugin
-          <strong>Option panel > General</strong>
-          tab and you will get an option
-          <strong>"Include KB in Blog Feed? "</strong>. 
-                                            Just turn it
-          <strong>ON</strong>
-          and KB post automatically included in to blog feed.
-        </p>
-        <p><img src="img/rss_blog_feed.png" alt=""/></p>
-
-
-      </section>
-
-      <section id="upgrade_notes">
-        <div class="page-header">
-          <h3>Upgrade Notes:</h3><hr class="notop"></div>
-
-        <h4 style="background: #ff9999; padding: 5px;">Please take a backup before update all files and folder.</h4>
-        <p>
-          <b>2018, January, 05 - v 1.0.4
-          </b>
-          <br/>Replace Addon all files and folders.
-        </p>
-        <p>
-          <b>2016, June, 07 - v 1.0.3
-          </b>
-          <br/>Replace Addon all files and folders.
-        </p>
-        <p>
-          <b>2016, April, 27 - v 1.0.2
-          </b>
-          <br/>Replace Addon all files and folders.
-        </p>
-        <p>
-          <b>2015, November, 20 - v 1.0.1
-          </b>
-          <br/>Replace Addon all files and folders.
-        </p>
-
-        <p>
-          <b>2015, April, 13 - v 1.0.0
-          </b>
-          <br/>Initial release.
-        </p>
-
-
-      </section>
-
-      <section id="changelog">
-        <div class="page-header">
-          <h3>Change Log</h3><hr class="notop"></div>
-
-        <p>
-          <b>2018, January, 05 - v 1.0.4
-          </b>
-          <br/>- Fixed minor styling issues.
-          <br/>- Improved Documentation.
-        </p>
-
-
-        <p>
-          <b>2016, June, 07 - v 1.0.3
-          </b>
-          <br/>- Fix multisite notification issue.
-          <br/>- Add option to include KB post in to Blog Feed.
-          <br/>- Improved Documentation.
-        </p>
-
-        <p>
-          <b>2016, April, 27 - v 1.0.2
-          </b>
-          <br/>- Added Multisite support.
-          <br/>- Improved Addon Performance.
-          <br/>- Improved Documentation.
-        </p>
-
-        <p>
-          <b>2015, November, 20 - v 1.0.1
-          </b>
-          <br/>- Improved Addon Performance.
-          <br/>- Improved Documentation.
-        </p>
-
-        <p>
-          <b>2015, April, 13 - v 1.0.0
-          </b>
-          <br/>- Initial release.
-        </p>
-
-      </section>
-
-      <section id="credits">
-        <div class="page-header">
-          <h3>Sources and Credits</h3><hr class="notop"></div>
-
-        <p>- Ideas By
-          <a href="https://bluewindlab.net" target="_blank">BlueWindLab</a>
-        </p>
-        <p>- Color Picker By
-          <a href="https://www.eyecon.ro/colorpicker" target="_blank">https://www.eyecon.ro/colorpicker</a>
-        </p>
-      </section>
-
-      <section id="more_products">
-        <div class="page-header">
-          <h3>Our Products</h3><hr class="notop"></div>
-
-        <ol class="our-products">
-          <li>
-            <a href="https://codecanyon.net/item/cobbler-mastershoe-repair-and-leather-accessories-service-center/20722930?ref=xenioushk" target="_blank">
-              <img src="img/our-templates/cobbler_template.jpg" alt=""/>
-              Cobbler Master - Shoe Repair and Leather Accessories Service Center
-            </a>
-          </li>
-
-          <li>
-            <a href="https://codecanyon.net/item/repair-geek-laptop-and-computer-fixing-service-center-html5-template/20615230?ref=xenioushk" target="_blank">
-              <img src="img/our-templates/repair_geek_template.jpg" alt=""/>
-              Repair Geek - Laptop And Computer Fixing Service Center HTML5 Template
-            </a>
-          </li>
-
-          <li>
-            <a href="https://codecanyon.net/item/generosity-charity-fundraising-nonprofit-html5-template/20494100?ref=xenioushk" target="_blank">
-              <img src="img/our-templates/generosity_template.jpg" alt=""/>
-              Generosity - Charity, Fundraising & Non-Profit HTML5 Template
-            </a>
-          </li>
-
-          <li>
-            <a href="https://codecanyon.net/item/auto-repair-maintenance-and-mechanic-center-html5-template/20375120?ref=xenioushk" target="_blank">
-              <img src="img/our-templates/auto_repair_template.jpg" alt=""/>
-              Auto Repair - Maintenance and Mechanic Center HTML5 Template
-            </a>
-          </li>
-
-          <li>
-            <a href="https://codecanyon.net/item/bicycle-fix-bicycle-repair-maintenance-and-tuneups-shop-html5-template/20135309?ref=xenioushk" target="_blank">
-              <img src="img/our-templates/repair_geek_template.jpg" alt=""/>
-              Bicycle Fix - Bicycle Repair, Maintenance and Tune-Ups Shop HTML5 Template
-            </a>
-          </li>
-
-          <li>
-            <a href="https://codecanyon.net/item/fit-bone-physiotherapy-and-massage-therapy-center/19868593?ref=xenioushk" target="_blank">
-              <img src="img/our-templates/fit_bone_template.jpg" alt=""/>
-              Fit Bone - Physiotherapy and Massage Therapy Center
-            </a>
-          </li>
-
-          <li>
-            <a href="https://codecanyon.net/item/mind-trainer-psychology-and-counseling-center-html5-template/19682769?ref=xenioushk" target="_blank">
-              <img src="img/our-templates/mind_trainer_template.jpg" alt=""/>
-              Mind Trainer - Psychology and Counseling Center HTML5 Template
-            </a>
-          </li>
-
-          <li>
-            <a href="https://codecanyon.net/item/senior-care-senior-citizens-elders-support-html5-template/19530660?ref=xenioushk" target="_blank">
-              <img src="img/our-templates/srcare_template.jpg" alt=""/>
-              Senior Care - Senior Citizens & Elders Support HTML5 Template
-            </a>
-          </li>
-
-          <li>
-            <a href="https://codecanyon.net/item/greenlife-nature-environmental-nonprofit-html5-template/18628803?ref=xenioushk" target="_blank">
-              <img src="img/our-templates/greenlife_template.jpg" alt=""/>
-              Greenlife - Nature & Environmental Non-Profit HTML5 Template
-            </a>
-          </li>
-
-          <li>
-            <a href="https://codecanyon.net/item/knowledge-desk-responsive-knowledgebase-html5-template/18408729?ref=xenioushk" target="_blank">
-              <img src="img/our-templates/kdesk_template.jpg" alt=""/>
-              Knowledge Desk - Responsive Knowledgebase HTML5 Template
-            </a>
-          </li>
-
-        </ol>
-
-        <div class="page-header" style="margin-top: 72px; margin-bottom: -24px;">
-          <h3>Our WordPress Plugins:</h3><hr class="notop"></div>
-
-
-        <ol class="our-products">
-          <li>
-            <a href="https://codecanyon.net/item/senior-care-elder-citizen-support-wordpress-theme/20317135?ref=xenioushk" target="_blank">
-              <img src="img/our-themes/srcare_wp.jpg" alt=""/>
-              Senior Care - Elder Citizen Support WordPress Plugin
-            </a>
-          </li>
-
-          <li>
-            <a href="https://codecanyon.net/item/knowledgedesk-knowledge-base-wordpress-theme/19481432?ref=xenioushk" target="_blank">
-              <img src="img/our-themes/kdesk_wp.jpg" alt=""/>
-              Knowledgedesk - Knowledge Base WordPress Plugin
-            </a>
-          </li>
-
-          <li>
-            <a href="https://codecanyon.net/item/wish-charity-wordpress-theme/19696926?ref=xenioushk" target="_blank">
-              <img src="img/our-themes/wish_wp.jpg" alt=""/>
-              Wish - Charity WordPress Plugin
-            </a>
-          </li>
-
-          <li>
-            <a href="https://codecanyon.net/item/restore-computer-mobile-digital-repair-service-wordpress-theme/19479832?ref=xenioushk" target="_blank">
-              <img src="img/our-themes/restore_wp.jpg" alt=""/>
-              Restore - Computer, Mobile & Digital Repair Service WordPress Plugin
-            </a>
-          </li>
-
-          <li>
-            <a href="https://codecanyon.net/item/greenlife-nature-environmental-wp-theme/19354034?ref=xenioushk" target="_blank">
-              <img src="img/our-themes/greenlife_wp.jpg" alt=""/>
-              Greenlife - Nature & Environmental WP Plugin
-            </a>
-          </li>
-
-          <li>
-            <a href="https://codecanyon.net/item/appeal-fully-functional-petition-theme/16149266?ref=xenioushk" target="_blank">
-              <img src="img/our-themes/appeal_wp.jpg" alt=""/>
-              Appeal – Fully Functional Petition WordPress Plugin
-            </a>
-          </li>
-
-        </ol>
-
-      </section>
-
+    <!-- doc-wrapper-->
+  </div>
+  <!-- page-wrapper-->
+
+  <footer id="footer" class="footer text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 text-left">
+          <span>Copyright &copy; 2021 - <a href="https://bluewindlab.net" target="_blank"
+              class="text-info">BlueWindLab</a>. All Rights Reserved.</span>
+        </div>
+        <div class="col-6 text-right">
+          <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+          <span>Designed by <a href="https://themes.3rdwavemedia.com/" target="_blank" class="text-info">Xiaoying
+              Riley</a>.</span>
+        </div>
+      </div>
     </div>
+    <!-- container-->
+  </footer>
+  <!-- footer-->
 
+  <a id="backTop">Back To Top</a>
 
-    <script src="assets/js/google-code-prettify/prettify.js"></script>
+  <!-- Main Javascript -->
+  <script type="text/javascript" src="https://xenioushk.github.io/bwl-static-assets/doc-assets/js/all.min.js"></script>
+  <script type="text/javascript" src="https://xenioushk.github.io/bwl-static-assets/doc-assets/js/main.js"></script>
+  <script type="text/javascript" src="https://xenioushk.github.io/bwl-static-assets/doc-assets/js/products.js"></script>
+</body>
 
-    <script src="assets/js/jquery.js"></script>
-
-    <script src="assets/js/jquery.scrollTo.js"></script>
-    <script src="assets/js/jquery.easing.js"></script>
-
-    <script src="assets/js/script.js"></script>
-    <script>
-      document.createElement('section');
-      var duration = '500',
-        easing = 'swing';
-    </script>
-
-  </body>
 </html>

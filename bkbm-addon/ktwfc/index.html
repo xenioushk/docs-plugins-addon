@@ -1,401 +1,455 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTDHTML4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
+<html lang="en">
 
-<head lang="en">
-  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+<head>
   <title>KB Tab For WooCommerce - Knowledge Base Addon - Documentation</title>
-  <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
-  <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
-  <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css"
-    media="screen, projection">
-  <style type="text/css" media="screen">
-    body {
-      font-family: verdana;
-      font-size: 13px;
-      line-height: 1.7em;
-    }
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    h2,
-    h3,
-    h4 {
-      line-height: 1.5em;
-    }
-
-    p,
-    table,
-    hr,
-    .box {
-      margin-bottom: 25px;
-      line-height: 1.7em;
-    }
-
-    .box p {
-      margin-bottom: 10px;
-    }
-
-    img {
-      box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
-      padding: 5px;
-      margin-top: 10px;
-    }
-  </style>
+  <meta name="description" content="KB Tab For WooCommerce - Knowledge Base Addon - Documentation" />
+  <meta name="author" content="Mahbub Alam Khan" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+    rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://xenioushk.github.io/bwl-static-assets/doc-assets/css/all.min.css" />
+  <link rel="stylesheet" href="https://xenioushk.github.io/bwl-static-assets/doc-assets/css/styles.css" />
 </head>
 
+<body class="body-green">
 
-<body>
-  <div class="container">
-
-    <h3 class="center alt">KB Tab For WooCommerce - Knowledge Base Addon - 1.1.2
-      <br />
-      Documentation by Mahbub Alam Khan
-    </h3>
-
-    <hr>
-
-    <div class="borderTop">
-      <div class="span-6 colborder info prepend-1">
-        <p class="prepend-top">
-          <strong>
-            Last Edited: 10/12/2024<br>
-            Created: 04/05/2015<br>
-            By: Md Mahbub Alam Khan<br>
-            Support:
-            <a
-              href="https://codecanyon.net/item/kb-tab-for-woocommerce-knowledge-base-addon/11342283/support/contact?ref=xenioushk">Get
-              Premium Support</a><br>
-            Web Site:
-            <a href="https://www.bluewindlab.net" target="_blank">www.bluewindlab.net</a><br>
-          </strong>
-        </p>
+  <div class="page-wrapper">
+    <!-- ******Header****** -->
+    <header id="header" class="header">
+      <div class="container">
+        <div class="branding">
+          <h1 class="logo text-center">
+            <a href="index.html">
+              <span class="text-bold">
+                KB Tab For WooCommerce<br />
+                Knowledge Base Addon Documentation
+              </span>
+            </a>
+          </h1>
+        </div>
+        <!-- branding-->
       </div>
-      <!-- end div .span-6 -->
+      <!-- container-->
+    </header>
+    <!-- header-->
 
-      <div class="span-12 last">
-        <p class="prepend-top append-0">
-          Thank you for purchasing KB Tab For WooCommerce - Knowledgebase Addon.
-          If you like this plugin, feel free to rate it five stars at CodeCanyon downloads section.
-          If you encounter any problems please do not give a low rating but
-          <a
-            href="https://codecanyon.net/item/kb-tab-for-woocommerce-knowledge-base-addon/11342283/support/contact?ref=xenioushk">contact
-            me</a>
-          first. So I can help you.
-          Thank You!
-        </p>
+    <div class="doc-wrapper">
 
+      <div class="container">
+        <div class="doc-body row">
+          <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
 
-      </div>
-    </div>
-    <!-- end div .borderTop -->
+            <div id="doc-nav" class="doc-nav">
+              <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+                <a class="nav-link scrollto sub-menu-sign" href="#addon-overview-section">Addon Overview &
+                  Installation</a>
+                <nav class="doc-sub-menu nav flex-column">
+                  <a class="nav-link scrollto" href="#requirements">Requirements</a>
+                  <a class="nav-link scrollto" href="#installation_steps">Installation Steps</a>
+                </nav>
+                <!-- nav-->
 
-    <hr>
+                <a class="nav-link scrollto" href="#how_to_operate">Operate Addon</a>
 
-    <h2 id="toc" class="alt">Table of Contents</h2>
-    <ol class="alpha">
-      <li>
-        <a href="#QuickIntroduction">Quick Introduction</a>
-      </li>
-      <li>
-        <a href="#howToInstall">Installation</a>
-      </li>
-      <li>
-        <a href="#howToUse">How To Use?</a>
-      </li>
-      <li>
-        <a href="#option_panel">Option Panel</a>
-      </li>
-      <li>
-        <a href="#translateAddon">Translate Addon</a>
-      </li>
-      <li>
-        <a href="#upgradeNotes">Upgrade Notes</a>
-      </li>
-      <li>
-        <a href="#changelog">Change Log</a>
-      </li>
-      <li>
-        <a href="#credits">Credits</a>
-      </li>
-      <li>
-        <a href="#conclusion">Conclusion</a>
-      </li>
+                <a class="nav-link scrollto sub-menu-sign" href="#plugin_shortcodes">Addon Shortcodes</a>
+                <nav class="doc-sub-menu nav flex-column">
+                  <a class="nav-link scrollto" href="#display_search_box">Display Search Box</a>
+                  <a class="nav-link scrollto" href="#custom_search_placeholder">Custom Search Placeholder</a>
+                </nav>
 
-    </ol>
+                <a class="nav-link scrollto" href="#addon_option_panel">Addon Option Panel</a>
 
+                <a class="nav-link scrollto" href="#video_tutorials">Video Tutorials</a>
+                <a class="nav-link scrollto" href="#translate_addon">Translate Addon</a>
+                <a class="nav-link scrollto" href="#trouble_shoot">Troubleshooting</a>
 
-    <hr />
+                <a class="nav-link scrollto" href="#upgrade_notes">Upgrade Notes</a>
+                <a class="nav-link scrollto" href="#change_log">Change Log</a>
+                <a class="nav-link scrollto" href="#source_credit">Source & Credit</a>
+                <a class="nav-link scrollto sub-menu-sign" href="#theme_template_section">More Template & Themes</a>
+                <nav class="doc-sub-menu nav flex-column">
+                  <a class="nav-link scrollto" href="#wordpress_themes">WordPress Themes</a>
+                  <a class="nav-link scrollto" href="#wordpress_plugins">WordPress Plugins</a>
+                  <a class="nav-link scrollto" href="#html5_templates">HTML5 Templates</a>
+                </nav>
 
-    <h3 id="QuickIntroduction">
-      <strong>A. Quick Introduction?</strong>
-      -
-      <a href="#toc">top</a>
-    </h3>
+                <small><i>Doc Last Update:</i> 20/03/2025</small>
+              </nav>
+              <!-- doc-menu-->
+            </div>
+
+            <h3 class="center alt">KB Tab For WooCommerce - Knowledge Base Addon - 1.1.2
+              <br />
+              Documentation by Mahbub Alam Khan
+            </h3>
 
 
-    <p>
-      <strong>KB tab for woocommerce Addon</strong>
-      allows you to convert you're knowledge base posts in to WooCommerce product Knowledgebase item with in a minute.
-      You can add unlimited number of knowledge base post as product knowledgebase items and using drag drop feature
-      sort them according to you're choice.
-      <p />
-    </p>
-    <p>
-      Addon comes with Premium & Unique
-      <strong>BWL Searchable Accordion jQuery Plugin</strong>. So that you're user can easily find their required
-      contents from long Knowledgebase lists.
-      Also pagination feature gives the flexibility to present large no of KB items very easily.
-      <br />
-    </p>
-    <p>
-      In admin panel, Addon automatically integrate two custom columns(No of Kbs and KB Tab Display Status) with each
-      WooCommerce product. This options gives you a quick
-      overview about product knowledge base status. you can easily show/hide KB tab using
-      <strong>Quick and Bulk Edit option</strong>. You can also doing this while add/edit product
-      information.
-      <br />
-    </p>
-    <p>
-      Addon also brings
-      <strong>extensive option panel</strong>
-      that allows you to configure KB tabs according to you're need. You can set KB tab order, set RTL mode, set
-      Pagination,
-      Set theme, set animation and many more.
-    </p>
+            <div class="borderTop">
+              <div class="span-6 colborder info prepend-1">
+                <p class="prepend-top">
+                  <strong>
+                    Last Edited: 10/12/2024<br>
+                    Created: 04/05/2015<br>
+                    By: Md Mahbub Alam Khan<br>
+                    Support:
+                    <a
+                      href="https://codecanyon.net/item/kb-tab-for-woocommerce-knowledge-base-addon/11342283/support/contact?ref=xenioushk">Get
+                      Premium Support</a><br>
+                    Web Site:
+                    <a href="https://www.bluewindlab.net" target="_blank">www.bluewindlab.net</a><br>
+                  </strong>
+                </p>
+              </div>
+              <!-- end div .span-6 -->
 
-    <p>
-
-      Checkout plugin outlook in WordPress site-
-
-      <br />
-      <img src="screenshot/01_bkb_ktfwc_demo.png" alt="" />
-
-    </p>
+              <div class="span-12 last">
+                <p class="prepend-top append-0">
+                  Thank you for purchasing KB Tab For WooCommerce - Knowledgebase Addon.
+                  If you like this plugin, feel free to rate it five stars at CodeCanyon downloads section.
+                  If you encounter any problems please do not give a low rating but
+                  <a
+                    href="https://codecanyon.net/item/kb-tab-for-woocommerce-knowledge-base-addon/11342283/support/contact?ref=xenioushk">contact
+                    me</a>
+                  first. So I can help you.
+                  Thank You!
+                </p>
 
 
-    <hr>
-
-    <h3 id="howToInstall">
-      <strong>B. Installation:</strong>
-      -
-      <a href="#toc">top</a>
-    </h3>
-
-    <p class="notice">
-      You need to install
-      <a href="https://codecanyon.net/item/bwl-knowledge-base-manager/7972812?ref=xenioushk" target="_blank">
-        BWL Knowledge Base Manager Plugin</a>
-      to use "KB Tab For WooCommerce Addon". Minimum version
-      <b>1.0.9</b>
-      required.
-    </p>
-
-    <h4>
-      <strong>
-        - Steps:</strong>
-    </h4>
-    <ol class="number">
-      <li>Go to plugins section in your wordpress admin panel and click
-        <b>Add New</b>
-        to install plugin.
-        <br />
-        <img src="screenshot/install-plugins-process.png" alt="" />
-      </li>
-
-      <li>Now, upload the "kb-tab-for-woocommerce.zip" file.</li>
-
-      <li>
-        Once plugin successfully uploaded in your server you will get an message to activate it.
-        Click on "Activate Plugin" Link and plugin will be ready to use.
-      </li>
-
-      <li>After activating plugins, you will redirect in plugins section of wp-admin panel and
-        show new installed plugins information in there.<br />
-        <img src="screenshot/installation.png" alt="" style="max-width: 900px; width: 100&;" />
-      </li>
-    </ol>
-
-    <h3 id="howToUse">
-      <strong>C. How To Use?</strong>
-      -
-      <a href="#toc">top</a>
-    </h3>
-
-    <p>- Once installation has been completed successfully, go to
-      <strong>Products</strong>
-      page from admin menu.
-      You will see two custom columns(<strong>No of Kbs</strong>
-      &
-      <strong>KB Tab Display Status</strong>)
-      with each WooCommerce product row.
-      <br />
-      <img src="screenshot/03_custom_column.png" alt="" style="max-width: 900px; width: 100&;" />
-    </p>
-
-    <p>- Now, click on any product 'Edit' link and you will see
-      <strong>Knowledge Base Item Settings</strong>
-      section
-      just below the product description editor box. Click
-      <strong>Add New</strong>
-      button will allow you to add new knowledge base
-      item. You can also show/hide knowledge base tab from this section. Check following image-<br />
-      <img src="screenshot/05_add_unlimited_kb.png" alt="" style="max-width: 900px; width: 100&;" />
-    </p>
-
-    <p>- Once you added all the items successfully, click
-      <strong>Update</strong>
-      button to save all the change and
-      you will see the output in front-end section. From the following image you can see the highlighted results of
-      filtered
-      items.
-      -
-      <br />
-      <img src="screenshot/02_live_search.png" alt="" />
-    </p>
-
-    <p>- Using
-      <strong>Quick Edit</strong>
-      &
-      <strong>Bulk Edit</strong>
-      feature you can easily change the status
-      of Knowledge base tab display settings.
-      <br />
-      <img src="screenshot/04_quick_and_bulk_edit_panel.png" alt="" style="max-width: 800px; width: 100%;" />
-    </p>
+              </div>
+            </div>
+            <!-- end div .borderTop -->
 
 
-    <p>- Addon has extensive option panel that allows you to configure KB tabs according to you're need.
-      You can set KB tab order, set RTL mode, set Pagination, Set theme, set animation and many more..<br />
-      <img src="screenshot/06_option_panel.png" alt="" />
-    </p>
+            <h2 id="toc" class="alt">Table of Contents</h2>
+            <ol class="alpha">
+              <li>
+                <a href="#QuickIntroduction">Quick Introduction</a>
+              </li>
+              <li>
+                <a href="#howToInstall">Installation</a>
+              </li>
+              <li>
+                <a href="#howToUse">How To Use?</a>
+              </li>
+              <li>
+                <a href="#option_panel">Option Panel</a>
+              </li>
+              <li>
+                <a href="#translateAddon">Translate Addon</a>
+              </li>
+              <li>
+                <a href="#upgradeNotes">Upgrade Notes</a>
+              </li>
+              <li>
+                <a href="#changelog">Change Log</a>
+              </li>
+              <li>
+                <a href="#credits">Credits</a>
+              </li>
+              <li>
+                <a href="#conclusion">Conclusion</a>
+              </li>
 
-    <h3 id="translateAddon">
-      <strong>E. Translate Plugin.</strong>
-      -
-      <a href="#toc">top</a>
-    </h3>
+            </ol>
+          </div>
+          <!-- doc-sidebar-->
 
-    <p>
-      "KB Tab For WooCommerce" offers cool translation feature. So, you can easily add this plugin
-      any kind of website. Check following steps for translate "KB Tab For WooCommerce" plugin.
-    </p>
+          <div class="doc-content col-md-9 col-12 order-1">
 
-    <ol>
-      <li>Inside of Addon "lang" folder you will get a file named "en_EN.po" file. To edit this file you need to install
-        "poedit" software in your computer.</li>
-      <li>Our Addon text-domain is 'bkb-kbtfw'</li>
-      <li>
-        If you are doing "localization of a plugin" for the first time, then I recommend you to check this video.
-        <a href="https://www.youtube.com/watch?v=aGN-hbMCPMg"
-          target="_blank">https://www.youtube.com/watch?v=aGN-hbMCPMg</a>
-      </li>
-      <li>Suppose you want to translate plugin in to "German" language.
-        <br />
-        So,".po" file name will be "bkb-kbtfw-de_DE.po". That's all.
-      </li>
-      <li>For country code check -
-        <a href="https://www.gnu.org/savannah-checkouts/gnu/gettext/manual/html_node/Country-Codes.html#Country-Codes">
-          https://www.gnu.org/savannah-checkouts/gnu/gettext/manual/html_node/Country-Codes.html#Country-Codes
-        </a>
-      </li>
-      <li>For Language code check -
-        <a
-          href="https://www.gnu.org/savannah-checkouts/gnu/gettext/manual/html_node/Usual-Language-Codes.html#Usual-Language-Codes">
-          https://www.gnu.org/savannah-checkouts/gnu/gettext/manual/html_node/Usual-Language-Codes.html#Usual-Language-Codes
-        </a>
-      </li>
+            <div class="content-inner">
 
-    </ol>
+              <h3 id="QuickIntroduction">
+                <strong>A. Quick Introduction?</strong>
+                -
+                <a href="#toc">top</a>
+              </h3>
 
-    <hr />
 
-    <!------------ Upgrade Notes ----------------->
-    <h3 id="upgradeNotes">
-      <strong>F. Upgrade Notes</strong>
-      -
-      <a href="#toc">top</a>
-    </h3>
-    <h4 style="background: #ff9999; padding: 5px;">Please take a backup before update all files and folder.</h4>
+              <p>
+                <strong>KB tab for woocommerce Addon</strong>
+                allows you to convert you're knowledge base posts in to WooCommerce product Knowledgebase item with in a
+                minute.
+                You can add unlimited number of knowledge base post as product knowledgebase items and using drag drop
+                feature
+                sort them according to you're choice.
+                <p />
+              </p>
+              <p>
+                Addon comes with Premium & Unique
+                <strong>BWL Searchable Accordion jQuery Plugin</strong>. So that you're user can easily find their
+                required
+                contents from long Knowledgebase lists.
+                Also pagination feature gives the flexibility to present large no of KB items very easily.
+                <br />
+              </p>
+              <p>
+                In admin panel, Addon automatically integrate two custom columns(No of Kbs and KB Tab Display Status)
+                with
+                each
+                WooCommerce product. This options gives you a quick
+                overview about product knowledge base status. you can easily show/hide KB tab using
+                <strong>Quick and Bulk Edit option</strong>. You can also doing this while add/edit product
+                information.
+                <br />
+              </p>
+              <p>
+                Addon also brings
+                <strong>extensive option panel</strong>
+                that allows you to configure KB tabs according to you're need. You can set KB tab order, set RTL mode,
+                set
+                Pagination,
+                Set theme, set animation and many more.
+              </p>
 
-    <p>
-      <b>2017, May, 12 - v 1.0.7
-      </b>
-      <br />- Replace all files and folders.
-    </p>
+              <p>
 
-    <hr>
+                Checkout plugin outlook in WordPress site-
 
-    <!------------ Change Log ----------------->
-    <h3 id="changelog">
-      <strong>G. Change Log</strong>
-      -
-      <a href="#toc">top</a>
-    </h3>
+                <br />
+                <img src="screenshot/01_bkb_ktfwc_demo.png" alt="" />
 
-    <div>
-      <h4>2024, December, 10 - v 1.1.3</h4>
-      <ul>
-        <li>Updated: Plugin for WordPress 6.7.1</li>
-        <li>Updated: Plugin for WooCommerce 9.4.3</li>
-        <li>Updated: Plugin language/translation file.</li>
-        <li>Updated: Addon documentation.</li>
-      </ul>
-    </div>
+              </p>
 
-    <p>
-      <b>2017, May, 12 - v 1.0.7
-      </b>
-      <br />- Fixed WooCommerce 3.0.6 notice and checked compatibility with latest version.
-      <br />- Update language files..
-      <br />- Improved Documentation.
-    </p>
 
-    <p>
-      <b>2016, December, 20 - v 1.0.6
-      </b>
-      <br />- Fixed add new KB button issue.
-      <br />- Fixed remove all KB items issue.
-      <br />- Fixed total KB count issue in product column.
-      <br />- Improved Addon Performance.
-      <br />- Improved Documentation.
-    </p>
+              <hr>
 
-    <p>
-      <b>2016, June, 07 - v 1.0.5
-      </b>
-      <br />- Fix multi-site notification issue.
-      <br />- Improved Addon Performance.
-      <br />- Improved Documentation.
-    </p>
+              <h3 id="howToInstall">
+                <strong>B. Installation:</strong>
+                -
+                <a href="#toc">top</a>
+              </h3>
 
-    <p>
-      <b>2016, May, 01 - v 1.0.4
-      </b>
-      <br />- Fixed KB content formatting issue.
-      <br />- Fixed search result issue.
-      <br />- Improved addon meta box.
-      <br />- Improved Addon Performance.
-      <br />- Improved Documentation.
-    </p>
+              <p class="notice">
+                You need to install
+                <a href="https://codecanyon.net/item/bwl-knowledge-base-manager/7972812?ref=xenioushk" target="_blank">
+                  BWL Knowledge Base Manager Plugin</a>
+                to use "KB Tab For WooCommerce Addon". Minimum version
+                <b>1.0.9</b>
+                required.
+              </p>
 
-    <p>
-      <b>2015, November, 20 - v 1.0.3
-      </b>
-      <br />- Improved Addon Performance.
-      <br />- Improved Documentation.
-    </p>
+              <h4>
+                <strong>
+                  - Steps:</strong>
+              </h4>
+              <ol class="number">
+                <li>Go to plugins section in your wordpress admin panel and click
+                  <b>Add New</b>
+                  to install plugin.
+                  <br />
+                  <img src="screenshot/install-plugins-process.png" alt="" />
+                </li>
 
-    <p>
-      <b>2015, November, 06 - v 1.0.2
-      </b>
-      <br />- Fixed Pagination Issue.
-      <br />- Update Documentation.
-    </p>
+                <li>Now, upload the "kb-tab-for-woocommerce.zip" file.</li>
 
-    <p>
-      <b>2015, August, 12 - v 1.0.1
-      </b>
-      <br />- Fixed Knowledgebase Tab Title For WooCommerce
-    </p>
-    </i>
-    <br />- Update Documentation.
+                <li>
+                  Once plugin successfully uploaded in your server you will get an message to activate it.
+                  Click on "Activate Plugin" Link and plugin will be ready to use.
+                </li>
+
+                <li>After activating plugins, you will redirect in plugins section of wp-admin panel and
+                  show new installed plugins information in there.<br />
+                  <img src="screenshot/installation.png" alt="" style="max-width: 900px; width: 100&;" />
+                </li>
+              </ol>
+
+              <h3 id="howToUse">
+                <strong>C. How To Use?</strong>
+                -
+                <a href="#toc">top</a>
+              </h3>
+
+              <p>- Once installation has been completed successfully, go to
+                <strong>Products</strong>
+                page from admin menu.
+                You will see two custom columns(<strong>No of Kbs</strong>
+                &
+                <strong>KB Tab Display Status</strong>)
+                with each WooCommerce product row.
+                <br />
+                <img src="screenshot/03_custom_column.png" alt="" style="max-width: 900px; width: 100&;" />
+              </p>
+
+              <p>- Now, click on any product 'Edit' link and you will see
+                <strong>Knowledge Base Item Settings</strong>
+                section
+                just below the product description editor box. Click
+                <strong>Add New</strong>
+                button will allow you to add new knowledge base
+                item. You can also show/hide knowledge base tab from this section. Check following image-<br />
+                <img src="screenshot/05_add_unlimited_kb.png" alt="" style="max-width: 900px; width: 100&;" />
+              </p>
+
+              <p>- Once you added all the items successfully, click
+                <strong>Update</strong>
+                button to save all the change and
+                you will see the output in front-end section. From the following image you can see the highlighted
+                results
+                of
+                filtered
+                items.
+                -
+                <br />
+                <img src="screenshot/02_live_search.png" alt="" />
+              </p>
+
+              <p>- Using
+                <strong>Quick Edit</strong>
+                &
+                <strong>Bulk Edit</strong>
+                feature you can easily change the status
+                of Knowledge base tab display settings.
+                <br />
+                <img src="screenshot/04_quick_and_bulk_edit_panel.png" alt="" style="max-width: 800px; width: 100%;" />
+              </p>
+
+
+              <p>- Addon has extensive option panel that allows you to configure KB tabs according to you're need.
+                You can set KB tab order, set RTL mode, set Pagination, Set theme, set animation and many more..<br />
+                <img src="screenshot/06_option_panel.png" alt="" />
+              </p>
+
+              <h3 id="translateAddon">
+                <strong>E. Translate Plugin.</strong>
+                -
+                <a href="#toc">top</a>
+              </h3>
+
+              <p>
+                "KB Tab For WooCommerce" offers cool translation feature. So, you can easily add this plugin
+                any kind of website. Check following steps for translate "KB Tab For WooCommerce" plugin.
+              </p>
+
+              <ol>
+                <li>Inside of Addon "lang" folder you will get a file named "en_EN.po" file. To edit this file you need
+                  to
+                  install
+                  "poedit" software in your computer.</li>
+                <li>Our Addon text-domain is 'bkb-kbtfw'</li>
+                <li>
+                  If you are doing "localization of a plugin" for the first time, then I recommend you to check this
+                  video.
+                  <a href="https://www.youtube.com/watch?v=aGN-hbMCPMg"
+                    target="_blank">https://www.youtube.com/watch?v=aGN-hbMCPMg</a>
+                </li>
+                <li>Suppose you want to translate plugin in to "German" language.
+                  <br />
+                  So,".po" file name will be "bkb-kbtfw-de_DE.po". That's all.
+                </li>
+                <li>For country code check -
+                  <a
+                    href="https://www.gnu.org/savannah-checkouts/gnu/gettext/manual/html_node/Country-Codes.html#Country-Codes">
+                    https://www.gnu.org/savannah-checkouts/gnu/gettext/manual/html_node/Country-Codes.html#Country-Codes
+                  </a>
+                </li>
+                <li>For Language code check -
+                  <a
+                    href="https://www.gnu.org/savannah-checkouts/gnu/gettext/manual/html_node/Usual-Language-Codes.html#Usual-Language-Codes">
+                    https://www.gnu.org/savannah-checkouts/gnu/gettext/manual/html_node/Usual-Language-Codes.html#Usual-Language-Codes
+                  </a>
+                </li>
+
+              </ol>
+
+              <hr />
+
+              <!------------ Upgrade Notes ----------------->
+              <h3 id="upgradeNotes">
+                <strong>F. Upgrade Notes</strong>
+                -
+                <a href="#toc">top</a>
+              </h3>
+              <h4 style="background: #ff9999; padding: 5px;">Please take a backup before update all files and folder.
+              </h4>
+
+              <p>
+                <b>2017, May, 12 - v 1.0.7
+                </b>
+                <br />- Replace all files and folders.
+              </p>
+
+              <hr>
+
+              <!------------ Change Log ----------------->
+              <h3 id="changelog">
+                <strong>G. Change Log</strong>
+                -
+                <a href="#toc">top</a>
+              </h3>
+
+              <div>
+                <h4>2024, December, 10 - v 1.1.3</h4>
+                <ul>
+                  <li>Updated: Plugin for WordPress 6.7.1</li>
+                  <li>Updated: Plugin for WooCommerce 9.4.3</li>
+                  <li>Updated: Plugin language/translation file.</li>
+                  <li>Updated: Addon documentation.</li>
+                </ul>
+              </div>
+
+              <p>
+                <b>2017, May, 12 - v 1.0.7
+                </b>
+                <br />- Fixed WooCommerce 3.0.6 notice and checked compatibility with latest version.
+                <br />- Update language files..
+                <br />- Improved Documentation.
+              </p>
+
+              <p>
+                <b>2016, December, 20 - v 1.0.6
+                </b>
+                <br />- Fixed add new KB button issue.
+                <br />- Fixed remove all KB items issue.
+                <br />- Fixed total KB count issue in product column.
+                <br />- Improved Addon Performance.
+                <br />- Improved Documentation.
+              </p>
+
+              <p>
+                <b>2016, June, 07 - v 1.0.5
+                </b>
+                <br />- Fix multi-site notification issue.
+                <br />- Improved Addon Performance.
+                <br />- Improved Documentation.
+              </p>
+
+              <p>
+                <b>2016, May, 01 - v 1.0.4
+                </b>
+                <br />- Fixed KB content formatting issue.
+                <br />- Fixed search result issue.
+                <br />- Improved addon meta box.
+                <br />- Improved Addon Performance.
+                <br />- Improved Documentation.
+              </p>
+
+              <p>
+                <b>2015, November, 20 - v 1.0.3
+                </b>
+                <br />- Improved Addon Performance.
+                <br />- Improved Documentation.
+              </p>
+
+              <p>
+                <b>2015, November, 06 - v 1.0.2
+                </b>
+                <br />- Fixed Pagination Issue.
+                <br />- Update Documentation.
+              </p>
+
+              <p>
+                <b>2015, August, 12 - v 1.0.1
+                </b>
+                <br />- Fixed Knowledgebase Tab Title For WooCommerce
+              </p>
+              </i>
+              <br />- Update Documentation.
 </body>
 </p>
 <p>
@@ -403,7 +457,8 @@
   </b>
   <br />- Initial release.
 </p>
-<hr><!------------ Conclusion: ----------------->
+<hr>
+
 <h3 id="credits">
   <strong>H. Credits</strong>
   -
@@ -418,7 +473,8 @@
 <p>- BWL Searchable Accordion Plugin By
   <a href="https://codecanyon.net/item/bwl-searchable-accordion-jquery-plugin/8184405?ref=xenioushk"
     target="_blank">xenioushk</a>
-</p><!------------ Conclusion: ----------------->
+</p>
+
 <h3 id="conclusion">
   <strong>I Conclusion:</strong>
   -
@@ -431,7 +487,76 @@
 <p>
   <a href="#toc">Go To Table of Contents</a>
 </p>
-<hr class="space">
-</div><!-- end div .container --></body>
+
+<!-- Our Template & Themes Section  -->
+
+<section id="theme_template_section" class="doc-section">
+  <h2 class="section-title">Our Themes & Templates</h2>
+
+  <div id="wordpress_themes" class="section-block">
+    <div class="row">
+      <div class="col-md-12 col-12">
+        <h3 class="block-title">WordPress Themes</h3>
+        <ol class="our-products list" id="bwl_wp_themes"></ol>
+      </div>
+    </div>
+  </div>
+
+  <div id="wordpress_plugins" class="section-block">
+    <div class="row">
+      <div class="col-md-12 col-12">
+        <h3 class="block-title">WordPress Plugins</h3>
+        <ol class="our-products list" id="bwl_wp_plugins"></ol>
+      </div>
+    </div>
+  </div>
+
+  <div id="html5_templates" class="section-block">
+    <div class="row">
+      <div class="col-md-12 col-12">
+        <h3 class="block-title">HTML5 Themes</h3>
+        <ol class="our-products list" id="bwl_html_templates"></ol>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+<!-- content-inner-->
+</div>
+<!-- doc-content-->
+</div>
+<!-- doc-body-->
+</div>
+<!-- container-->
+</div>
+<!-- doc-wrapper-->
+</div>
+<!-- page-wrapper-->
+
+<footer id="footer" class="footer text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 text-left">
+        <span>Copyright &copy; 2021 - <a href="https://bluewindlab.net" target="_blank"
+            class="text-info">BlueWindLab</a>. All Rights Reserved.</span>
+      </div>
+      <div class="col-6 text-right">
+        <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+        <span>Designed by <a href="https://themes.3rdwavemedia.com/" target="_blank" class="text-info">Xiaoying
+            Riley</a>.</span>
+      </div>
+    </div>
+  </div>
+  <!-- container-->
+</footer>
+<!-- footer-->
+
+<a id="backTop">Back To Top</a>
+
+<!-- Main Javascript -->
+<script type="text/javascript" src="https://xenioushk.github.io/bwl-static-assets/doc-assets/js/all.min.js"></script>
+<script type="text/javascript" src="https://xenioushk.github.io/bwl-static-assets/doc-assets/js/main.js"></script>
+<script type="text/javascript" src="https://xenioushk.github.io/bwl-static-assets/doc-assets/js/products.js"></script>
+</body>
 
 </html>
