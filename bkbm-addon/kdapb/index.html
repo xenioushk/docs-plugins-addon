@@ -55,15 +55,15 @@
 
                 <a class="nav-link scrollto" href="#how_to_operate">Operate Addon</a>
 
-                <a class="nav-link scrollto sub-menu-sign" href="#plugin_shortcodes">Addon Shortcodes</a>
-                <nav class="doc-sub-menu nav flex-column">
+                <a class="nav-link scrollto sub-menu-sign d-none" href="#plugin_shortcodes">Addon Shortcodes</a>
+                <nav class="doc-sub-menu nav flex-column d-none">
                   <a class="nav-link scrollto" href="#display_search_box">Display Search Box</a>
                   <a class="nav-link scrollto" href="#custom_search_placeholder">Custom Search Placeholder</a>
                 </nav>
 
-                <a class="nav-link scrollto" href="#addon_option_panel">Addon Option Panel</a>
+                <a class="nav-link scrollto" href="#options_panel">Options Panel</a>
 
-                <a class="nav-link scrollto" href="#video_tutorials">Video Tutorials</a>
+                <a class="nav-link scrollto d-none" href="#video_tutorials">Video Tutorials</a>
                 <a class="nav-link scrollto" href="#translate_addon">Translate Addon</a>
                 <a class="nav-link scrollto" href="#trouble_shoot">Troubleshooting</a>
 
@@ -109,7 +109,7 @@
                     </li>
                     <li>
                       <strong>Premium Support:</strong>
-                      <a href="https://codecanyon.net/item/bwl-advanced-faq-manager/5007135/support/contact"
+                      <a href="https://codecanyon.net/item/kb-display-as-blog-post/5007135/support/contact"
                         target="_blank">Send Message</a>
                     </li>
                     <li>
@@ -150,7 +150,104 @@
                 </div>
               </section>
 
-              <section id="requirements" class="doc-section">
+              <!--  Installation Section -->
+              <section id="installation-section" class="doc-section">
+                <div id="requirements" class="section-block">
+                  <h3 class="block-title">Installation Requirements</h3>
+                  <p>You need at least WordPress version 4.8+ installed for this plugin to work properly. It is strongly
+                    recommended that you always use the latest stable version of WordPress to ensure all known bugs and
+                    security issues are fixed. Other requirements:</p>
+                  <ul>
+                    <li>PHP version 5.3 or greater.</li>
+                    <li>MySQL version 5.0.15 or greater.</li>
+                  </ul>
+
+                  <div class="callout-block callout-info">
+                    <div class="icon-holder">
+                      <i class="fas fa-info-circle text-light"></i>
+                    </div>
+                    <!-- icon-holder-->
+                    <div class="content">
+                      <h4 class="callout-title text-light">Note:</h4>
+                      <p>You need to install <a href="https://1.envato.market/bkbm-wp" target="_blank"> BWL
+                          Knowledgebase
+                          Manager Plugin</a> to use "KB Display As Blog Post Addon". Minimum version
+                        <b>1.5.7</b> required.
+                      </p>
+                    </div>
+                    <!-- content-->
+                  </div>
+                  <!-- callout-block-->
+                </div>
+
+                <div id="installation_steps" class="section-block">
+                  <div class="row">
+                    <div class="col-md-12 col-12">
+                      <h3 class="block-title">Installation Steps</h3>
+
+                      <p>To install a plugin, you must first upload the plugin files and then activate the theme. The
+                        plugin files can be uploaded in two ways:</p>
+                      <ul>
+                        <li><strong>FTP Upload:</strong> Using your FTP client, upload the non-zipped plugin folder into
+                          the /wp-content/plugins/ folder on your server.</li>
+                        <li><strong>WordPress Upload:</strong> Navigate to Plugins >> Add New >> Upload Plugin. Go to
+                          browse, and select the zipped theme folder. Hit "Install Now" and the theme will be uploaded
+                          and installed.</li>
+                      </ul>
+
+                      <p>
+                        <strong class="steps"> Step 01:</strong>
+                        Go to WP admin dashboard and click on <em>Plugins >> Add New</em>.
+                      </p>
+
+                      <div class="doc-img-box">
+                        <a href="img/installation/1.jpg" class="venobox">
+                          <img class="img-fluid" src="img/installation/1.jpg" alt="doc_img" />
+                        </a>
+                      </div>
+
+                      <p>
+                        <strong class="steps"> Step 02:</strong>
+                        Click on <em> Upload Plugin</em> and upload the "kb-display-as-blog-post.zip" file.
+                      </p>
+
+                      <div class="doc-img-box">
+                        <a href="img/installation/2.jpg" class="venobox">
+                          <img class="img-fluid" src="img/installation/2.jpg" alt="doc_img" />
+                        </a>
+                      </div>
+
+                      <p>
+                        <strong class="steps"> Step 03:</strong>
+                        Once plugin successfully uploaded in your server you will get an message to activate it. Click
+                        on <b>Activate Plugin</b> Link and plugin will be ready to use . After activating plugin, you
+                        will redirect in plugins section of wp-admin panel and display new installed plugins information
+                        in there.
+                      </p>
+
+                      <div class="doc-img-box">
+                        <a href="img/installation/3.jpg" class="venobox">
+                          <img class="img-fluid" src="img/installation/3.jpg" alt="doc_img" />
+                        </a>
+                      </div>
+
+                      <p>
+                        <strong class="steps"> Step 04:</strong>
+                        Now you are ready to use KB Display As Blog Post Addon! In left sidebar menu you will see a new
+                        section like following image.
+                      </p>
+
+                      <div class="doc-img-box">
+                        <a href="img/installation/4.jpg" class="venobox">
+                          <img class="img-fluid" src="img/installation/4.jpg" alt="doc_img" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section id="requirements" class="doc-section d-none">
                 <div class="page-header">
                   <h3>Requirements</h3>
                   <hr class="notop">
@@ -172,152 +269,100 @@
                 </ul>
               </section>
 
-              <section id="theme_installation" class="doc-section">
-                <div class="page-header">
-                  <h3>Plugin Installation</h3>
-                  <hr class="notop">
+              <section id="how_to_operate" class="doc-section">
+
+                <h3 class="section-title">Operate The Addon</h3>
+
+                <div class="section-block">
+
+                  <p>- Once you completed installation process, plugin will automatically include all Knowledge Base
+                    items
+                    with
+                    you're blog posts
+                    according to date order. But, You can control Knowledge Base posts display using bulk/quick edit.
+                  </p>
+
+                  <div class="doc-img-box">
+                    <a href="img/02_bkb_kbdabp_demo.png" class="venobox">
+                      <img class="img-fluid" src="img/02_bkb_kbdabp_demo.png" alt="doc_img" />
+                    </a>
+                  </div>
+
+                  <p>- Addon comes with built-in show/hide custom meta box option to control Knowledge Base posts
+                    display.
+                    This way, you can easily handle view status, while you're adding/editing KB posts.
+                  </p>
+
+                  <div class="doc-img-box">
+                    <a href="img/03_kb_post_editing.png" class="venobox">
+                      <img class="img-fluid" src="img/03_kb_post_editing.png" alt="doc_img" />
+                    </a>
+                  </div>
+
+                  <p>- If you want to change settings for single Knowledge Base post, then
+                    you can use quick edit(inline editing) option.
+                  </p>
+
+                  <div class="doc-img-box">
+                    <a href="img/04_quick_edit.png" class="venobox">
+                      <img class="img-fluid" src="img/04_quick_edit.png" alt="doc_img" />
+                    </a>
+                  </div>
+
+                  <p>- If you want to change settings for multiple Knowledge Base post, then
+                    you can use bulk edit option.
+                  </p>
+
+                  <div class="doc-img-box">
+                    <a href="img/05_bulk_edit.png" class="venobox">
+                      <img class="img-fluid" src="img/05_bulk_edit.png" alt="doc_img" />
+                    </a>
+                  </div>
+
+                  <p>
+                    - Addon allows you to upload featured image for Knowledge Base items. This way, you can easily set
+                    featured
+                    image for Knowledge Base Post and display with blog post(Theme Support Required).
+                  </p>
+
+                  <div class="doc-img-box">
+                    <a href="img/06_custom_featured_image.png" class="venobox">
+                      <img class="img-fluid" src="img/06_custom_featured_image.png" alt="doc_img" />
+                    </a>
+                  </div>
+
                 </div>
-
-                <p>To install a plugin, you must first upload the plugin files and then activate the theme. The plugin
-                  files
-                  can
-                  be uploaded in two ways:</p>
-                <ul>
-                  <li>
-                    <strong>FTP Upload:</strong>
-                    Using your FTP client, upload the non-zipped plugin folder into the /wp-content/plugins/ folder on
-                    your
-                    server.
-                  </li>
-                  <li>
-                    <strong>WordPress Upload:</strong>
-                    Navigate to Plugins >> Add New >> Upload Plugin.
-                    Go to browse, and select the zipped theme folder. Hit "Install Now" and the theme will be uploaded
-                    and
-                    installed.
-                  </li>
-                </ul>
-
-                <p>
-                  <strong>Step 01:</strong>
-                  Go to WP admin dashboard and click on
-                  <em>Plugins >> Add New</em>.
-                </p>
-
-                <p><img src="img/install-plugins-process.png" alt="doc_img" /></p>
-
-                <p>
-                  <strong>Step 02:</strong>
-                  Click on
-                  <em>
-                    Upload Plugin</em>.
-                </p>
-
-                <p><img src="img/2.jpg" alt="doc_img" /></p>
-
-                <p>
-                  <strong>Step 03:</strong>
-                  Once plugin successfully uploaded in your server you will get an message to activate it.
-                  Click on "Activate Plugin" Link and plugin will be ready to use .
-
-                  <br />
-
-                  After activating plugin, you will redirect in plugins section of wp-admin panel and show new installed
-                  plugins
-                  information in there.
-
-                </p>
-
-                <p><img src="img/installation.png" alt="doc_img" /></p>
-
               </section>
 
-              <section id="how_to_use" class="doc-section">
+              <section id="options_panel" class="doc-section">
 
-                <div class="page-header">
-                  <h3>How to use?</h3>
-                  <hr class="notop">
+                <h3 class="section-title">Options Panel</h3>
+
+                <div class="section-block">
+                  <p>
+                    From version 1.0.3 we added an unique option to include Knowledge base posts in to Regular blog post
+                    RSS feed. To enable this option go to Plugin <strong>Option panel > General</strong> tab and you
+                    will
+                    get an option <strong>"Include KB in Blog Feed? "</strong>.
+                    Just turn it <strong>ON</strong> and KB post automatically included in to blog feed.
+                  </p>
+
+                  <div class="doc-img-box">
+                    <a href="img/rss_blog_feed.png" class="venobox">
+                      <img class="img-fluid" src="img/rss_blog_feed.png" alt="doc_img" />
+                    </a>
+                  </div>
                 </div>
-
-                <p>- Once you completed installation process, plugin will automatically include all Knowledge Base items
-                  with
-                  you're blog posts
-                  according to date order. But, You can control Knowledge Base posts display using bulk/quick edit.
-                </p>
-                <p>
-                  <br />
-                  <img src="img/02_bkb_kbdabp_demo.png" alt="" />
-                </p>
-
-                <p>- Addon comes with built-in show/hide custom meta box option to control Knowledge Base posts display.
-                  This way, you can easily handle view status, while you're adding/editing KB posts.
-                </p>
-                <p>
-                  <br />
-                  <img src="img/03_kb_post_editing.png" alt="" />
-                </p>
-
-                <p>- If you want to change settings for single Knowledge Base post, then
-                  you can use quick edit(inline editing) option.
-                </p>
-
-                <p>
-                  <br />
-                  <img src="img/04_quick_edit.png" alt="" />
-                </p>
-
-                <p>- If you want to change settings for multiple Knowledge Base post, then
-                  you can use bulk edit option.
-                </p>
-
-                <p>
-                  <br />
-                  <img src="img/05_bulk_edit.png" alt="" />
-                </p>
-
-                <p>
-                  - Addon allows you to upload featured image for Knowledge Base items. This way, you can easily set
-                  featured
-                  image for Knowledge Base Post and display with blog post(Theme Support Required).
-                </p>
-
-                <p>
-                  <br />
-                  <img src="img/06_custom_featured_image.png" alt="" />
-                </p>
-
-
-              </section>
-
-              <section id="plugin_option_panel" class="doc-section">
-                <div class="page-header">
-                  <h3>Option Panel</h3>
-                  <hr class="notop">
-                </div>
-
-                <p>
-                  From version 1.0.3 we added an unique option to include Knowledge base posts in to Regular blog post
-                  RSS
-                  feed.
-                  To enable this option go to Plugin
-                  <strong>Option panel > General</strong>
-                  tab and you will get an option
-                  <strong>"Include KB in Blog Feed? "</strong>.
-                  Just turn it
-                  <strong>ON</strong>
-                  and KB post automatically included in to blog feed.
-                </p>
-                <p><img src="img/rss_blog_feed.png" alt="" /></p>
-
 
               </section>
 
               <!-- Translation Section  -->
               <section id="translate_addon" class="doc-section">
                 <h2 class="section-title">Translate FAQ Plugin</h2>
-                <p><strong>Ajaxified FAQ Search</strong> WordPress Plugin offers amazing translation feature. Besides
+                <p><strong>KB Display As Blog Post Addon</strong> offers amazing translation feature.
+                  Besides
                   the English, you can easily translate the plugin text into other languages. Check following steps to
-                  translate "Ajaxified FAQ Search" WordPress plugin.</p>
+                  translate <strong>KB Display As Blog Post Addon</strong>.</p>
 
                 <div class="section-block">
                   <h3 class="block-title">Addon Translation Steps</h3>
@@ -331,21 +376,25 @@
                       </p>
 
                       <p><strong class="steps">Step 02: </strong> Next, navigate to
-                        <strong>/wp-content/plugins/bwl-advanced-faq-manager/lang/</strong>. You will get a file named
+                        <strong>/wp-content/plugins/kb-display-as-blog-post/languages/</strong>. You will get a file
+                        named
                         <strong>en_EN.po</strong>.
                       </p>
 
-                      <p><strong class="steps">Step 03: </strong> Our Plugin text-domain is 'afs-addon'. Now, we want to
+                      <p><strong class="steps">Step 03: </strong> Our Plugin text-domain is 'bkb-kbdabp'. Now, we want
+                        to
                         translate our theme text in to <strong>Dutch</strong> language. So, copy
-                        <strong>en_EN.po</strong> file and rename it as <strong>afs-addon-de_DE.po</strong>
+                        <strong>en_EN.po</strong> file and rename it as <strong>bkb-kbdabp-de_DE.po</strong>
                       </p>
 
-                      <p><strong class="steps">Step 04: </strong> Now, open that newly created 'afs-addon-de_DE.po' file
+                      <p><strong class="steps">Step 04: </strong> Now, open that newly created 'bkb-kbdabp-de_DE.po'
+                        file
                         using <strong>Poedit</strong> software. You will get all the plugin texts in there and you just
                         need to add appropriate translated text in <strong>Translation</strong> box.</p>
 
                       <p><strong class="steps">Step 05: </strong> Finally, save the file and you will get
-                        'afs-addon-de_DE.mo' file inside <strong>languages</strong> folder.</p>
+                        <strong>bkb-kbdabp-de_DE.mo</strong> file inside <strong>languages</strong> folder.
+                      </p>
 
                       <div class="callout-block callout-info">
                         <div class="icon-holder">
@@ -384,14 +433,15 @@
                       <div class="card-header" id="headingOne">
                         <a class="btn-link collapsed" href="#" data-toggle="collapse" data-target="#faq_1"> <i
                             class="fas fa-question-circle"></i> I got message - 'You need to download & install BWL
-                          Advanced FAQ Manager Plugin to use Ajaxified FAQ Search - Advanced FAQ Addon. Minimum version
+                          Advanced FAQ Manager Plugin to use KB Display As Blog Post Addon - Advanced FAQ Addon. Minimum
+                          version
                           1.5.7 required ! '. What should I do? </a>
                       </div>
 
                       <div id="faq_1" class="collapse" aria-labelledby="headingOne" data-parent="#faq_accordion">
                         <div class="card-body">
                           <p>You need to install <a href="https://1.envato.market/baf-wp" target="_blank"> BWL Advanced
-                              FAQ Manager Plugin</a> to use "Ajaxified FAQ Search - Advanced FAQ Addon".</p>
+                              FAQ Manager Plugin</a> to use "KB Display As Blog Post Addon - Advanced FAQ Addon".</p>
                         </div>
                       </div>
                     </div>
@@ -414,7 +464,7 @@
                       </p>
                       <ul>
                         <li>Replace all files and directories in your
-                          <strong>plugins/bwl-advanced-faq-manager</strong>
+                          <strong>plugins/kb-display-as-blog-post</strong>
                           folder.
                         </li>
                       </ul>
