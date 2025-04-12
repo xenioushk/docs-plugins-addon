@@ -65,6 +65,7 @@ $(function () {
   // Just add a new row.
   var changeLogData = [
     // Add a new row below this comment.
+    ["2025, April, 12 - v 2.0.0", ["Updated: Plugin composer, namespace, and .nvmrc file.", "Updated: Plugin notice for the dependencies.", "Updated: Plugin filters, actions, and meta information."]],
     ["2025, April, 04 - v 1.1.8", ["Updated: Plugin composer version and dependency manager code."]],
     ["2025, March, 29 - v 1.1.7", ["Updated: Plugin admin ajax function."]],
     ["2025, March, 20 - v 1.1.6", ["Updated: Plugin composer version."]],

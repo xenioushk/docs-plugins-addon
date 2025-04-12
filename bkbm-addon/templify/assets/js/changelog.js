@@ -65,6 +65,7 @@ $(function () {
   // Just add a new row.
   var changeLogData = [
     // Add a new row below this comment.
+    ["2025, April, 12 - v 2.0.0", ["Updated: Plugin composer, namespace, and .nvmrc file.", "Updated: Plugin notice for the dependencies.", "Updated: Plugin filters, actions, and meta information."]],
     ["2018, January, 05 - v 1.0.4", ["Fixed: Plugin styling issues."]],
   ]
   generateDynamicLog(changeLogData)
