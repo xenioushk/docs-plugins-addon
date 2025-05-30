@@ -65,7 +65,7 @@ $(function () {
   // Just add a new row.
   var changeLogData = [
     // Add a new row below this comment.
-    ["2025, May, 30 - v 2.0.2", ["Fixed: Plugin deactivation method bug."]],
+    ["2025, May, 30 - v 2.0.2", ["Fixed: Plugin deactivation method bug.", "Updated: Plugin for WordPress 6.8.1"]],
     ["2025, April, 18 - v 2.0.1", ["Fixed: Plugin notice for the dependencies error."]],
     ["2025, April, 12 - v 2.0.0", ["Updated: Plugin composer, namespace, and .nvmrc file.", "Updated: Plugin notice for the dependencies.", "Updated: Plugin filters, actions, and meta information."]],
     ["2024, December, 05 - v 1.1.7", ["Updated: Plugin for WordPress 6.7.1"]],
